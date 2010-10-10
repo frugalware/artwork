@@ -1,0 +1,424 @@
+# This theme is derived from the Soeb XFWM4 theme from xfce-look.org.
+# It is released under the same license as the original, GPL.
+# It is intended for use with the GTK2 Frugalware theme.
+# Version 0.1
+
+$FONT_NAME = "XFT#Verdana:size=8"
+
+Require
+{
+	Templates = "true"
+}
+
+Define = "Borders"
+{
+	Border
+	{
+		Focused
+		{
+			TopLeft = "Image topleft-focused.png#fixed"
+			Top = "Image top-focused.png#tiled"
+			TopRight = "Image topright-focused.png#fixed"
+			Left =  "Image left-focused.png#tiled"
+			Right = "Image right-focused.png#tiled"
+			BottomLeft = "Image bottomleft-focused.png#fixed"
+			Bottom = "Image bottom-focused.png#tiled"
+			BottomRight = "Image bottomright-focused.png#fixed"
+		}
+		Unfocused
+		{
+			TopLeft = "Image topleft-unfocused.png#fixed"
+			Top = "Image top-unfocused.png#tiled"
+			TopRight = "Image topright-unfocused.png#fixed"
+			Left =  "Image left-unfocused.png#tiled"
+			Right = "Image right-unfocused.png#tiled"
+			BottomLeft = "Image bottomleft-unfocused.png#fixed"
+			Bottom = "Image bottom-unfocused.png#tiled"
+			BottomRight = "Image bottomright-unfocused.png#fixed"
+		}
+	}
+}
+
+Define = "BorderLess"
+{
+	Border
+	{
+		Focused
+		{
+			TopLeft = "Empty"
+			Top = "Empty"
+			TopRight = "Empty"
+			Left =  "Empty"
+			Right = "Empty"
+			BottomLeft = "Empty"
+			Bottom = "Empty"
+			BottomRight = "Empty"
+		}
+		Unfocused
+		{
+			TopLeft = "Empty"
+			Top = "Empty"
+			TopRight = "Empty"
+			Left =  "Empty"
+			Right = "Empty"
+			BottomLeft = "Empty"
+			Bottom = "Empty"
+			BottomRight = "Empty"
+		}
+	}
+}
+
+Define = "MenuBorders"
+{
+	Border
+	{
+		Focused
+		{
+			TopLeft = "Image topleft-focused.png#fixed"
+			Top = "Image top-focused.png#tiled"
+			TopRight = "Image topright-focused.png#fixed"
+			Left =  "Image left-focused.png#tiled"
+			Right = "Image right-focused.png#tiled"
+			BottomLeft = "Image bottomleft-focused.png#fixed"
+			Bottom = "Image bottom-focused.png#tiled"
+			BottomRight = "Image bottomright-focused.png#fixed"
+		}
+		Unfocused
+		{
+			TopLeft = "Image topleft-focused.png#fixed"
+			Top = "Image top-focused.png#tiled"
+			TopRight = "Image topright-focused.png#fixed"
+			Left =  "Image left-focused.png#tiled"
+			Right = "Image right-focused.png#tiled"
+			BottomLeft = "Image bottomleft-focused.png#fixed"
+			Bottom = "Image bottom-focused.png#tiled"
+			BottomRight = "Image bottomright-focused.png#fixed"
+		}
+	}
+}
+
+Define = "OtherBorders"
+{
+	Border
+	{
+		Focused
+		{
+			TopLeft = "Empty"
+			Top = "Empty"
+			TopRight = "Empty"
+			Left =  "Empty"
+			Right = "Empty"
+			BottomLeft = "Empty"
+			Bottom = "Empty"
+			BottomRight = "Empty"
+		}
+		Unfocused
+		{
+			TopLeft = "Image topleft-focused.png#fixed"
+			Top = "Image top-focused.png#tiled"
+			TopRight = "Image topright-focused.png#fixed"
+			Left =  "Image left-focused.png#tiled"
+			Right = "Image right-focused.png#tiled"
+			BottomLeft = "Image bottomleft-focused.png#fixed"
+			Bottom = "Image bottom-focused.png#tiled"
+			BottomRight = "Image bottomright-focused.png#fixed"
+		}
+	}
+}
+
+Define = "CloseButton"
+{
+	Left = "TitleLeft"
+	{
+		Focused = "Image title-left-focused.png#fixed"
+		Unfocused = "Image title-left-unfocused.png#fixed"
+		Pressed = "Empty"
+		Hover = "Empty"
+		Button = "1" { Actions = "Do Nothing" }
+	}
+	Left = "Close"
+	{
+		Focused = "Image close-focused.png#fixed"
+		Unfocused = "Image close-unfocused.png#fixed"
+		Pressed = "Image close-pressed.png#fixed"
+		Hover = "Empty"
+		Button = "1" { Actions = "Close" }
+	}
+}
+
+Define = "MaximizeButton"
+{
+	Right = "TitleRight"
+	{
+		Focused = "Image title-right-focused.png#fixed"
+		Unfocused = "Image title-right-unfocused.png#fixed"
+		Pressed = "Empty"
+		Hover = "Empty"
+		Button = "1" { Actions = "Do Nothing" }
+	}
+	Right = "Maximize"
+	{
+		Focused = "Image maximize-focused.png#fixed"
+		Unfocused = "Image maximize-unfocused.png#fixed"
+		Pressed = "Image maximize-pressed.png#fixed"
+		Hover = "Empty"
+		Button = "1" { Actions = "Toggle Maximized 1 1" }
+	}
+}
+
+Define = "TitleBar"
+{
+	Height = "17"
+	HeightAdapt = "False"
+	Pad = "1 0 4 4"
+	Focused = "Empty"
+	Unfocused = "Empty"
+	WidthMin = "1"
+	WidthMax = "100"
+	WidthSymetric = "True"
+	Tab
+	{
+		Focused = "Image title-focused.png#tiled"
+		Unfocused = "Image title-unfocused.png#tiled"
+		FocusedSelected = "Image title-focused.png#tiled"
+		UnfocusedSelected = "Image title-unfocused.png#tiled"
+	}
+	Separator
+	{
+		Focused = "Image separator-focused.png#fixed"
+		Unfocused = "Image separator-unfocused.png#fixed"
+	}
+	Font
+	{
+		Focused = "$FONT_NAME#1 1#Center"
+		Unfocused = "$FONT_NAME#1 1#Center"
+		FocusedSelected = "$FONT_NAME#1 1#Center"
+		UnfocusedSelected = "$FONT_NAME#1 1#Center"
+	}
+	FontColor
+	{
+		FocusedSelected = "darkblue deepskyblue"
+		Focused = "darkslateblue deepskyblue"
+		UnfocusedSelected = "darkslategray white"
+		Unfocused = "slategray white"
+	}
+}
+
+Define = "TitleBarLess"
+{
+	Height = "0"
+	HeightAdapt = "False"
+	Pad = "0 0 0 0"
+	Focused = "Empty"
+	Unfocused = "Empty"
+	WidthMin = "0"
+	WidthMax = "100"
+	WidthSymetric = "True"
+	Tab
+	{
+		Focused = "Empty"
+		Unfocused = "Empty"
+		FocusedSelected = "Empty"
+		UnfocusedSelected = "Empty"
+	}
+	Separator
+	{
+		Focused = "Empty"
+		Unfocused = "Empty"
+	}
+	Font
+	{
+		Focused = "fixed"
+		Unfocused = "fixed"
+		FocusedSelected = "fixed"
+		UnfocusedSelected = "fixed"
+	}
+	FontColor
+	{
+		Focused = "black"
+		Unfocused = "black"
+		FocusedSelected = "black"
+		UnfocusedSelected = "black"
+	}
+}
+
+Define = "DefaultDecor"
+{
+	Decor = "Default"
+	{
+		Title
+		{
+			@TitleBar
+			Buttons
+			{
+				@CloseButton
+				@MaximizeButton
+			}
+			@Borders
+		}
+	}
+}
+
+Define = "TitleBarLessDecor"
+{
+	Decor = "TitleBarLess"
+	{
+		Title
+		{
+			@TitleBarLess
+			@Borders
+		}
+	}
+}
+
+Define = "BorderLessDecor"
+{
+	Decor = "BorderLess"
+	{
+		Title
+		{
+			@TitleBar
+			Buttons
+			{
+				@CloseButton
+				@MaximizeButton
+			}
+			@BorderLess
+		}
+	}
+}
+
+Define = "InputDialogDecor"
+{
+	Decor = "InputDialog"
+	{
+		Title
+		{
+			@TitleBar
+			Buttons
+			{
+				@CloseButton
+				Right = "TitleRight"
+				{
+					Focused = "Image title-right-focused.png#fixed"
+					Unfocused = "Image title-right-unfocused.png#fixed"
+					Pressed = "Empty"
+					Hover = "Empty"
+					Button = "1" { Actions = "Do Nothing" }
+				}
+			}
+			@Borders
+		}
+	}
+}
+
+Define = "MenuDecor"
+{
+	Decor = "Menu"
+	{
+		Title
+		{
+			@TitleBarLess
+			@MenuBorders
+		}
+	}
+}
+
+Define = "StatusWindowDecor"
+{
+	Decor = "StatusWindow"
+	{
+		Title
+		{
+			@TitleBarLess
+			@OtherBorders
+		}
+	}
+}
+
+Define = "WorkSpaceIndicatorDecor"
+{
+	Decor = "WorkspaceIndicator"
+	{
+		Title
+		{
+			@TitleBarLess
+			@OtherBorders
+		}
+	}
+}
+
+PDecor
+{
+	@DefaultDecor
+	@TitleBarLessDecor
+	@BorderLessDecor
+	@InputDialogDecor
+	@MenuDecor
+	@StatusWindowDecor
+	@WorkSpaceIndicatorDecor
+}
+
+Harbour
+{
+	Texture = "Solid #65A2DA"
+}
+
+CmdDialog
+{
+	Font = "$FONT_NAME#Left"
+	Texture = "Solid white"
+	Text = "black"
+	Pad = "2 2 2 2"
+}
+
+Menu
+{
+	Pad = "4 4 2 2"
+	Focused
+	{
+		Font = "$FONT_NAME#Left"
+		Background = "Empty"
+		Item = "Solid white"
+		Text = "black"
+		Separator = "Solid #a99d8c 1x1"
+		Arrow = "Image arrow.png#fixed"
+	}
+	Unfocused
+	{
+		Font = "$FONT_NAME#Left"
+		Background = "Empty"
+		Item = "Solid white"
+		Text = "black"
+		Separator = "Solid #a99d8c 1x1"
+		Arrow = "Image arrow.png#fixed"
+	}
+	Selected
+	{
+		Font = "$FONT_NAME#Left"
+		Background = "Empty"
+		Item = "Image selected.png#tiled"
+		Text = "white"
+		Separator = "Solid #a99d8c 1x1"
+		Arrow = "Image arrow-selected.png#fixed"
+	}
+}
+
+Status
+{
+	Font = "$FONT_NAME#Center"
+	Texture = "Solid white"
+	Text = "black"
+	Pad = "2 2 2 2"
+}
+
+WorkSpaceIndicator
+{
+	Font = "$FONT_NAME#Center"
+	Background = "Solid white"
+	WorkSpace = "Solid #65A2DA"
+	WorkSpaceActive = "Solid #4C89C1"
+	Text = "black"
+	EdgePadding = "2 2 2 2"
+	WorkSpacePadding = "2 2 2 2"
+}
