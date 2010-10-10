@@ -1,0 +1,23 @@
+Frugalware grub splash dimensions:
+
+IMPORTANT!!! The background image should be as simple as possible and the
+size should be around 20 kilobytes.
+
+boot menu:
+- x,y = common.inc:1029,1030
+- width = ???
+
+boot options:
+- x = common.inc:1042 -> 1st number
+- y = common.inc:1042 -> dunno which, needs testing
+- width,height = main.inc:304,305
+
+timer:
+- x,y = timeout.inc:64,65
+
+colors:
+- menu normal: common.inc:1014
+- menu selected: common.inc:1015
+- 'boot options' text: common.inc:1016
+- boot options: common.inc:1017
+- menu bar: common.inc:1021
