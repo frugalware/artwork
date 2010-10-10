@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+	<wallpaper deleted="false">    
+		<name>Frugalware</name>
+		<filename>/usr/share/pixmaps/backgrounds/gnome/frugalware/frugalware.png</filename>
+		<options>stretched</options>
+	</wallpaper>
+</wallpapers>

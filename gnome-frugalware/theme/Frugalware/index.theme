@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Frugalware
+Type=X-GNOME-Metatheme
+Comment=Frugalware Default Theme
+
+[X-GNOME-Metatheme]
+GtkTheme=Frugalware
+MetacityTheme=Frugalware
+IconTheme=Frugalware
+CursorTheme=FwX11MouseThemeSpinningFading24px
+CursorSize=24

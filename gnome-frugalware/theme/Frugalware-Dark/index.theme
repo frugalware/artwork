@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Frugalware Dark
+Type=X-GNOME-Metatheme
+Comment=Frugalware Default Theme (Dark version)
+
+[X-GNOME-Metatheme]
+GtkTheme=Frugalware-Dark
+MetacityTheme=Frugalware-Dark
+IconTheme=Frugalware-Dark
+CursorTheme=FwX11MouseThemeSpinningFading24px
+CursorSize=24

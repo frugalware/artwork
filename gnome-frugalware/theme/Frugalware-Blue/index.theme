@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Frugalware Blue
+Type=X-GNOME-Metatheme
+Comment=Frugalware Default Theme (Blue verison)
+
+[X-GNOME-Metatheme]
+GtkTheme=Frugalware-Blue
+MetacityTheme=Frugalware-Blue
+IconTheme=Frugalware-Blue
+CursorTheme=FwX11MouseThemeSpinningFading24px
+CursorSize=24
