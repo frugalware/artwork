@@ -1,0 +1,32 @@
+Xlogin*greeting:Welcome to CLIENTHOST\040
+Xlogin*namePrompt:Username:\040
+Xlogin*passwdPrompt:Password:\040
+Xlogin*fail:incorrect
+Xlogin*promptFace:Sans-10
+Xlogin*greetFace:Sans-9
+Xlogin*failFace:Sans-9
+Xlogin*face:Sans-9
+Xlogin*failColor:red
+Xlogin*promptColor:black
+Xlogin*greetColor:black
+Xlogin*foreground:black
+Xlogin*background:#7195C1
+Xlogin*allowNullPasswd: false
+Xlogin*allowRootLogin: false
+
+Xmessage*message.scrollVertical:never
+Xmessage*message.scrollHorizontal:never
+Xmessage*Command.highlightThickness:2
+Xmessage*Command.internalWidth:8
+Xmessage*Command.internalHeight:8
+Xmessage*Command.shapeStyle:rectangle
+Xmessage*font:fixed
+Xmessage.height:38
+Xmessage*background:#224B86
+Xmessage*foreground:#7796BD
+Xmessage*borderWidth:0
+Xmessage*Form.displayList:foreground black;lines 1,-1,-1,-1,-1,0,0,0,0,-1,1,2,1,-2,-2,-2,-2,1,1,1
+
+XConsole*verbose:true
+XConsole*exitOnFail:true
+

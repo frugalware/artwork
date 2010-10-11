@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# setup cursor and background
+xsetroot -cursor_name left_ptr
+bgs /etc/X11/xdm/frugalware/background.png
+
+# optional widgets to supplement xdm login screen
+/etc/X11/xdm/frugalware/buttons -geometry -0-0 &
+/etc/X11/xdm/frugalware/xsessions &

@@ -1,0 +1,18 @@
+#!/bin/sh
+
+X=`xwininfo -root | grep 'Width:' | gawk '{print $2}'`
+X=`echo "$X/2" | bc`
+FN="fixed"
+FG="#7796BD"
+cd /etc/X11/xinit
+[ ! -d "/tmp/xdm-frugalware" ] && mkdir -p /tmp/xdm-frugalware
+
+for i in xinitrc.*; do 
+	A=`echo $i | sed 's|^.*\.\(.*\)|\1|'`;
+	SESSIONS=("${SESSIONS[@]}" "$A" "/tmp/xdm-frugalware/$A");
+	echo -e "`echo \#\!/bin/sh`\nexec ln -sf xinitrc.\`basename \$0\` xinitrc" > /tmp/xdm-frugalware/$A
+	chmod +x /tmp/xdm-frugalware/$A
+done
+
+yeahlaunch -fn "$FN" -x "$X" -fg "$FG" ${SESSIONS[@]}
+rm -rf /tmp/xdm-frugalware

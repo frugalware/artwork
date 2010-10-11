@@ -1,0 +1,18 @@
+DisplayManager.errorLogFile:	/var/log/xdm.log
+DisplayManager.pidFile:		/var/run/xdm.pid
+DisplayManager.keyFile:		/etc/X11/xdm/xdm-keys
+DisplayManager.servers:		/etc/X11/xdm/Xservers
+DisplayManager.accessFile:	/etc/X11/xdm/Xaccess
+DisplayManager*resources:	/etc/X11/xdm/frugalware/Xresources
+DisplayManager.willing:		su nobody -c /usr/lib/X11/xdm/Xwilling
+DisplayManager*authorize:	true
+DisplayManager*chooser:		/usr/lib/X11/xdm/chooser
+DisplayManager*startup:		/usr/lib/X11/xdm/Xstartup
+DisplayManager*session:		/usr/lib/X11/xdm/Xsession
+DisplayManager*reset:		/usr/lib/X11/xdm/Xreset
+DisplayManager*authComplain:	true
+DisplayManager._0.setup:	/etc/X11/xdm/frugalware/Xsetup
+DisplayManager._0.startup:	/etc/X11/xdm/frugalware/Xstartup
+DisplayManager._0.reset:	/usr/lib/X11/xdm/TakeConsole
+DisplayManager*loginmoveInterval:	10
+DisplayManager.requestPort:	0
