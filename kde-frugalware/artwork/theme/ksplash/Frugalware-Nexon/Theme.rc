@@ -1,0 +1,8 @@
+[KSplash Theme: Frugalware-Nexon]
+Name = Frugalware-Nexon
+Description = KDE Splash Screen For Nexon with Faenza icons
+Version = 1.0
+Author = Frugalware Devel Team
+Copyright = GPL 2010 | http://frugalware.org
+Homepage = frugalware.org
+Engine = KSplashX

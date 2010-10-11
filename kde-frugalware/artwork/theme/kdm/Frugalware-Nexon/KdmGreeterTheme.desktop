@@ -1,0 +1,9 @@
+# This is not really a .desktop file like the rest, but it is useful to treat
+# it as such
+
+[KdmGreeterTheme]
+Greeter=nexon-kdm.xml
+Name=Frugalware-Nexon
+Author=Frugalware Devel Team
+Copyright=GPL 2010 | http://frugalware.org
+Screenshot=screenshot.png
