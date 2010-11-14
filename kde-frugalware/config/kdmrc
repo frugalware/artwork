@@ -45,7 +45,7 @@ LogoArea=Logo
 LogoPixmap=
 MaxShowUID=65000
 MinShowUID=1000
-NumLock=On
+NumLock=Off
 Preloader=/usr/bin/preloadkde
 SelectedUsers=@users
 ShowUsers=Selected
@@ -59,7 +59,7 @@ UserList=true
 
 [X-:*-Core]
 AllowNullPasswd=false
-AllowShutdown=Root
+AllowShutdown=All
 NoPassEnable=false
 NoPassUsers=
 ServerArgsLocal=-br -nolisten tcp  dpms
@@ -68,7 +68,7 @@ ServerCmd=/usr/bin/X
 [X-:*-Greeter]
 AllowClose=false
 DefaultUser=_ntp
-FocusPasswd=false
+FocusPasswd=true
 LoginMode=DefaultLocal
 PreselectUser=Previous
 
