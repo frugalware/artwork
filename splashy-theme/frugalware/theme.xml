@@ -14,10 +14,10 @@
         y coordinate, width and height are for the progress bar.
         Remember that x, y, width and height are expressed in percentage -->
         <dimension>
-            <x>10</x>
-            <y>90</y>
-            <width>80</width>
-            <height>2</height>
+            <x>34</x>
+            <y>75</y>
+            <width>32</width>
+            <height>3</height>
         </dimension>
         <!-- here you can set the color of the progressbar...
         set the amount of red, green, blue and alpha channel. 
@@ -32,10 +32,10 @@
         <border>
             <enable>no</enable>
             <color>
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
-                <alpha>155</alpha>
+                <red>23</red>
+                <green>147</green>
+                <blue>209</blue>
+                <alpha>255</alpha>
             </color>
         </border>
         <!-- here you can set the color of the progressbar background
@@ -43,10 +43,10 @@
         Remember that the max value is 255 and the minumun value is 0-->
         <background>
             <color>
-		<red>64</red>
-		<green>127</green>
-		<blue>191</blue>
-                <alpha>0</alpha>
+                <red>230</red>
+                <green>230</green>
+                <blue>230</blue>
+                <alpha>255</alpha>
             </color>
         </background>
         <direction>
@@ -90,10 +90,10 @@
         Remember that x, y, width and height are expressed in percentage
         or pixel units -->
         <dimension>
-            <x>20</x>
-            <y>50</y>
-            <width>60</width>
-            <height>40</height>
+            <x>0</x>
+            <y>0</y>
+            <width>100</width>
+            <height>10</height>
         </dimension>
         <!-- here you can set the color of the text area...
         set the amount of red, green, blue and alpha channel. 
@@ -102,7 +102,7 @@
             <red>0</red>
             <green>0</green>
             <blue>0</blue>
-            <alpha>155</alpha>
+            <alpha>127</alpha>
         </color>
         <!-- whether or not you want a border around the progressbar. default: no -->
         <border>
@@ -117,8 +117,8 @@
         <text>
             <!-- font file to use, path relative to theme -->
             <font>
-                <file>FreeMono.ttf</file>
-                <height>10</height>
+                <file>FreeSans.ttf</file>
+                <height>8</height>
             </font>
             <!-- here you can set the color of the text/font...
             set the amount of red, green, blue and alpha channel. 
