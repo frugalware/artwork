@@ -1,7 +1,7 @@
 /* XPM */
 static char *ccc_large[] = {
 /* columns rows colors chars-per-pixel */
-"48 48 67 1",
+"48 48 67 1 ",
 "  c #000000",
 ". c #0B0202",
 "X c #373737",
@@ -34,7 +34,7 @@ static char *ccc_large[] = {
 "q c #FA3131",
 "w c #F63A3A",
 "e c #FB3B3B",
-"r c #C14D4D",
+"r c #C24D4D",
 "t c #D25656",
 "y c #DC5F5F",
 "u c #E14C4C",

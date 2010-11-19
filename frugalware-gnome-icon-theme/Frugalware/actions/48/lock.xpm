@@ -1,7 +1,7 @@
 /* XPM */
 static char *lock[] = {
 /* columns rows colors chars-per-pixel */
-"48 48 111 2",
+"48 48 111 2 ",
 "   c #000000",
 ".  c #040404",
 "X  c #050505",
