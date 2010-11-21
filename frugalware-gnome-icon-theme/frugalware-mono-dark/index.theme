@@ -1,7 +1,7 @@
 [Icon Theme]
 Name=Frugalware-Mono-Dark
 Comment=Frugalware Monochrome icon theme for dark panel (based on ubuntu-mono-icons).
-Inherits=Frugalware,gnome,hicolor
+Inherits=Frugalware-Dark,gnome,hicolor
 
 Example=directory-x-normal
 
