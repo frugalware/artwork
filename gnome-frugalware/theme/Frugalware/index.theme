@@ -9,3 +9,5 @@ MetacityTheme=Frugalware
 IconTheme=Frugalware
 CursorTheme=FwX11MouseThemeSpinningFading24px
 CursorSize=24
+ButtonLayout=close,minimize,maximize:menu
+
