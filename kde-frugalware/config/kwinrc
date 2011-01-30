@@ -70,6 +70,6 @@ BorderSize=1
 ButtonsOnLeft=M
 ButtonsOnRight=HIA_X
 CustomButtonPositions=false
-PluginLib=kwin3_crystal
+PluginLib=kwin3_plastik
 ShowToolTips=true
 
