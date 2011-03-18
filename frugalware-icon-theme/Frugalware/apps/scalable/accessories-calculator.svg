@@ -16,14 +16,25 @@
   <defs
      id="defs2410">
     <linearGradient
+       id="linearGradient3888">
+      <stop
+         id="stop3890"
+         style="stop-color:#717249;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3892"
+         style="stop-color:#717249;stop-opacity:0"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
        id="linearGradient3465">
       <stop
          id="stop3467"
-         style="stop-color:#a0978c;stop-opacity:1"
+         style="stop-color:#ccc7c1;stop-opacity:1"
          offset="0" />
       <stop
          id="stop3469"
-         style="stop-color:#fefefd;stop-opacity:1"
+         style="stop-color:#fefefd;stop-opacity:0.58015269"
          offset="1" />
     </linearGradient>
     <linearGradient
@@ -284,7 +295,7 @@
        id="linearGradient3812"
        xlink:href="#linearGradient3465"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.025,0,0,1.0625,-8.5999986,-3.9999969)" />
+       gradientTransform="matrix(1.025,0,0,1.0625,-9.5999986,-3.9999969)" />
     <linearGradient
        id="linearGradient3737-1">
       <stop
@@ -368,6 +379,22 @@
        xlink:href="#ButtonShadow-0"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1.0238095,0,0,1.0119048,-1.1428571,-98.071429)" />
+    <linearGradient
+       x1="34"
+       y1="14"
+       x2="34"
+       y2="39"
+       id="linearGradient3894"
+       xlink:href="#linearGradient3888"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       x1="37"
+       y1="16"
+       x2="37"
+       y2="49"
+       id="linearGradient3902"
+       xlink:href="#linearGradient3888"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <metadata
      id="metadata2413">
@@ -459,15 +486,15 @@
          style="font-size:48px;font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Endless Showroom;-inkscape-font-specification:Endless Showroom Heavy" />
     </g>
     <path
-       d="m 18,14 c -0.554,0 -1,0.446 -1,1 l 0,18 c 0,0.554 0.446,1 1,1 l 60,0 c 0.554,0 1,-0.446 1,-1 l 0,-18 c 0,-0.554 -0.446,-1 -1,-1 l -60,0 z m 1.03125,2.03125 57.9375,0 0,15.9375 -57.9375,0 0,-15.9375 z"
+       d="m 17,14 c -0.554,0 -1,0.446 -1,1 l 0,18 c 0,0.554 0.446,1 1,1 l 62,0 c 0.554,0 1,-0.446 1,-1 l 0,-18 c 0,-0.554 -0.446,-1 -1,-1 z m 1.03125,2.03125 59.9375,0 0,15.9375 -59.9375,0 z"
        inkscape:connector-curvature="0"
        id="rect3761"
-       style="opacity:0.3;color:#000000;fill:#717249;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="opacity:0.3;color:#000000;fill:url(#linearGradient3902);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <path
-       d="m 18,14 c -0.554,0 -1,0.446 -1,1 l 0,18 c 0,0.554 0.446,1 1,1 l 60,0 c 0.554,0 1,-0.446 1,-1 l 0,-18 c 0,-0.554 -0.446,-1 -1,-1 l -60,0 z m 0.03125,1.03125 59.9375,0 0,17.9375 -59.9375,0 0,-17.9375 z"
+       d="m 17,14 c -0.554,0 -1,0.446 -1,1 l 0,18 c 0,0.554 0.446,1 1,1 l 62,0 c 0.554,0 1,-0.446 1,-1 l 0,-18 c 0,-0.554 -0.446,-1 -1,-1 z m 0.03125,1.03125 61.9375,0 0,17.9375 -61.9375,0 z"
        inkscape:connector-curvature="0"
        id="rect3757"
-       style="opacity:0.6;color:#000000;fill:#717249;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="opacity:0.6;color:#000000;fill:url(#linearGradient3894);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
   </g>
   <g
      id="layer1"
@@ -483,11 +510,11 @@
        id="rect3728"
        style="opacity:0.5;fill:url(#linearGradient3188);fill-opacity:1;fill-rule:nonzero;stroke:none" />
     <rect
-       width="64"
+       width="66"
        height="22"
        rx="2"
        ry="2"
-       x="16"
+       x="15"
        y="13"
        id="rect3425"
        style="fill:none;stroke:url(#linearGradient3812);stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />

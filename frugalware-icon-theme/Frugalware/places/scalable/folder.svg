@@ -16,6 +16,17 @@
   <defs
      id="defs2410">
     <linearGradient
+       id="linearGradient3874">
+      <stop
+         id="stop3876"
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3878"
+         style="stop-color:#ffffff;stop-opacity:0"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
        x1="11.794092"
        y1="3.2126782"
        x2="11.794092"
@@ -44,26 +55,26 @@
        id="linearGradient3348">
       <stop
          id="stop3350"
-         style="stop-color:#e0c693;stop-opacity:1"
+         style="stop-color:#ddbf8b;stop-opacity:1"
          offset="0" />
       <stop
          id="stop3356"
-         style="stop-color:#c0984f;stop-opacity:1"
+         style="stop-color:#c29856;stop-opacity:1"
          offset="0.71691591" />
       <stop
          id="stop3352"
-         style="stop-color:#a67315;stop-opacity:1"
+         style="stop-color:#a2773a;stop-opacity:1"
          offset="1" />
     </linearGradient>
     <linearGradient
        id="linearGradient3187">
       <stop
          id="stop3189"
-         style="stop-color:#c6953a;stop-opacity:1"
+         style="stop-color:#c29656;stop-opacity:1"
          offset="0" />
       <stop
          id="stop3191"
-         style="stop-color:#dec18c;stop-opacity:1"
+         style="stop-color:#ddc08b;stop-opacity:1"
          offset="1" />
     </linearGradient>
     <linearGradient
@@ -103,17 +114,6 @@
        xlink:href="#linearGradient3187"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(0,12)" />
-    <filter
-       x="-0.29508197"
-       y="-0.46153846"
-       width="1.5901639"
-       height="1.9230769"
-       color-interpolation-filters="sRGB"
-       id="filter3179">
-      <feGaussianBlur
-         id="feGaussianBlur3181"
-         stdDeviation="6.6964288" />
-    </filter>
     <filter
        color-interpolation-filters="sRGB"
        id="filter3174">
@@ -220,6 +220,37 @@
        xlink:href="#ButtonShadow"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1.0277778,0,0,1.0127315,-1.333333,0.03087963)" />
+    <clipPath
+       id="clipPath3860">
+      <rect
+         width="84"
+         height="72"
+         rx="6"
+         ry="6"
+         x="6"
+         y="18"
+         id="rect3862"
+         style="fill:#ff00ff;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    </clipPath>
+    <filter
+       x="-0.16558799"
+       y="-0.19715989"
+       width="1.331176"
+       height="1.3943198"
+       color-interpolation-filters="sRGB"
+       id="filter3870">
+      <feGaussianBlur
+         id="feGaussianBlur3872"
+         stdDeviation="5.1703125" />
+    </filter>
+    <linearGradient
+       x1="48.021698"
+       y1="22.933374"
+       x2="48.021698"
+       y2="88.347588"
+       id="linearGradient3880"
+       xlink:href="#linearGradient3874"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <metadata
      id="metadata2413">
@@ -309,20 +340,21 @@
        inkscape:connector-curvature="0"
        id="rect3728"
        style="opacity:0.5;fill:url(#linearGradient3188);fill-opacity:1;fill-rule:nonzero;stroke:none" />
-    <rect
-       width="54.464287"
-       height="34.82143"
-       rx="9"
-       ry="9"
-       x="13.306199"
-       y="13.887781"
-       transform="matrix(0.8917533,0,0,0.92600293,12.134153,19.139874)"
-       id="rect2399"
-       style="opacity:0.15;fill:#fff9dc;fill-opacity:1;fill-rule:nonzero;stroke:none;filter:url(#filter3179)" />
     <path
        d="M 12,90 C 8.676,90 6,87.324 6,84 L 6,82 6,26 6,24 c 0,-0.334721 0.04135,-0.6507 0.09375,-0.96875 0.0487,-0.295596 0.09704,-0.596915 0.1875,-0.875 0.00988,-0.03038 0.020892,-0.0636 0.03125,-0.09375 0.098865,-0.287771 0.2348802,-0.547452 0.375,-0.8125 0.1445918,-0.273507 0.3156161,-0.535615 0.5,-0.78125 0.1843839,-0.245635 0.3737765,-0.473472 0.59375,-0.6875 0.439947,-0.428056 0.94291,-0.814526 1.5,-1.09375 0.278545,-0.139612 0.5734731,-0.246947 0.875,-0.34375 -0.2562018,0.100222 -0.4867109,0.236272 -0.71875,0.375 -0.00741,0.0044 -0.023866,-0.0045 -0.03125,0 -0.031933,0.0193 -0.062293,0.04251 -0.09375,0.0625 -0.120395,0.0767 -0.2310226,0.163513 -0.34375,0.25 -0.1061728,0.0808 -0.2132809,0.161112 -0.3125,0.25 -0.1779299,0.161433 -0.3474596,0.345388 -0.5,0.53125 -0.1075789,0.130255 -0.2183939,0.265285 -0.3125,0.40625 -0.025089,0.03838 -0.038446,0.08587 -0.0625,0.125 -0.064763,0.103032 -0.1302275,0.204517 -0.1875,0.3125 -0.1010083,0.194706 -0.2056748,0.415701 -0.28125,0.625 C 7.30454,21.30306 7.288911,21.3218 7.28125,21.34375 7.2494249,21.4357 7.2454455,21.530581 7.21875,21.625 7.1884177,21.731618 7.1483606,21.828031 7.125,21.9375 7.0521214,22.279012 7,22.635705 7,23 l 0,2 0,56 0,2 c 0,2.781848 2.2181517,5 5,5 l 2,0 68,0 2,0 c 2.781848,0 5,-2.218152 5,-5 l 0,-2 0,-56 0,-2 c 0,-0.364295 -0.05212,-0.720988 -0.125,-1.0625 -0.04415,-0.206893 -0.08838,-0.397658 -0.15625,-0.59375 -0.0077,-0.02195 -0.0233,-0.04069 -0.03125,-0.0625 -0.06274,-0.173739 -0.138383,-0.367449 -0.21875,-0.53125 -0.04158,-0.0828 -0.07904,-0.169954 -0.125,-0.25 -0.0546,-0.09721 -0.126774,-0.18835 -0.1875,-0.28125 -0.09411,-0.140965 -0.204921,-0.275995 -0.3125,-0.40625 -0.143174,-0.17445 -0.303141,-0.346998 -0.46875,-0.5 -0.01117,-0.0102 -0.01998,-0.02115 -0.03125,-0.03125 -0.138386,-0.125556 -0.285091,-0.234436 -0.4375,-0.34375 -0.102571,-0.07315 -0.204318,-0.153364 -0.3125,-0.21875 -0.0074,-0.0045 -0.02384,0.0044 -0.03125,0 -0.232039,-0.138728 -0.462548,-0.274778 -0.71875,-0.375 0.301527,0.0968 0.596455,0.204138 0.875,0.34375 0.55709,0.279224 1.060053,0.665694 1.5,1.09375 0.219973,0.214028 0.409366,0.441865 0.59375,0.6875 0.184384,0.245635 0.355408,0.507743 0.5,0.78125 0.14012,0.265048 0.276135,0.524729 0.375,0.8125 0.01041,0.03078 0.02133,0.06274 0.03125,0.09375 0.09046,0.278085 0.1388,0.579404 0.1875,0.875 C 89.95865,23.3493 90,23.665279 90,24 l 0,2 0,56 0,2 c 0,3.324 -2.676,6 -6,6 l -72,0 z"
        inkscape:connector-curvature="0"
        id="path3615"
        style="opacity:0.2;fill:url(#radialGradient2874);fill-opacity:1;fill-rule:nonzero;stroke:none" />
   </g>
+  <g
+     id="layer5"
+     style="display:inline">
+    <path
+       d="m 15.96875,22.53125 a 5.4456496,5.4456496 0 0 0 -5.4375,5.4375 l 0,52.0625 a 5.4456496,5.4456496 0 0 0 5.4375,5.4375 l 64.0625,0 a 5.4456496,5.4456496 0 0 0 5.4375,-5.4375 l 0,-52.0625 a 5.4456496,5.4456496 0 0 0 -5.4375,-5.4375 l -64.0625,0 z"
+       clip-path="url(#clipPath3860)"
+       id="path3850"
+       style="opacity:0.15;fill:url(#linearGradient3880);fill-opacity:1;fill-rule:nonzero;stroke:none;filter:url(#filter3870)" />
+  </g>
+  <g
+     id="layer6" />
 </svg>
