@@ -2,8 +2,8 @@
 # it as such
 
 [KdmGreeterTheme]
-Greeter=nexon-kdm.xml
-Name=Frugalware-Nexon
+Greeter=Frugalware-kdm.xml
+Name=Frugalware
 Author=Frugalware Devel Team
-Copyright=GPL 2010 | http://frugalware.org
+Copyright=GPL 2011 | http://frugalware.org
 Screenshot=screenshot.png
