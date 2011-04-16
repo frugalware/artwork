@@ -1,1 +1,6 @@
-{"shell-version": ["3.0.0.2"], "uuid": "admin@frugalware.org", "name": "Frugalware Logo", "description": "Displays a Frugalware logo on the Activities button"}
+{
+	"shell-version": ["3.0.0.2"], 
+	"uuid": "frugalware-logo@frugalware.org", 
+	"name": "Frugalware Logo", "description": 
+	"Displays a Frugalware logo on the Activities button"
+}
