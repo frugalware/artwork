@@ -3,8 +3,8 @@
 
 <greeter id="theme">
 	<style font="Sans 12" window-text-color="#629FED"
-	       base-color="#629FED" alternate-base-color="#666666"
-	       text-color="#243B58" disabled-text-color="#111111"/>
+	       base-color="#D6D6D6" alternate-base-color="#666666"
+	       text-color="#5D5D5D" disabled-text-color="#111111"/>
 	       
 	<item type="pixmap" id="background" background="true">
 		<normal file="1280x800.jpg" scalemode="crop"/>
@@ -20,15 +20,15 @@
 				<normal file="icon-kde.png"/>
 				<pos anchor="c" x="50%" y="80%"/>
 			</item>
-
+			
 			<item type="label" id="welcome">
-				<pos anchor="c" x="50%" y="46%"/>
-				<normal alpha="0.5" font="Sans Bold 18" color="#FFFFFF"/>
+				<pos anchor="c" x="50%" y="43%"/>
+				<normal alpha="0.5" font="Sans Bold 18" color="#555555"/>
 				<stock type="welcome-label"/>
 			</item>
 
 			<item type="rect" id="user-field">
-				<pos anchor="c" x="50%" y="43%" width="400" height="144"/>
+				<pos anchor="c" x="50%" y="40%" width="400" height="144"/>
 				<box orientation="vertical" spacing="0" homogeneous="true">
 				
 					<item type="pixmap" butoon="true">
@@ -60,8 +60,8 @@
 				<fixed>
 			
 					<item type="label">
-						<pos anchor="se" x="96%" y="70%"/>
-						<normal alpha="0.5" font="Sans 8" color="#ffffff"/>
+						<pos anchor="se" x="93%" y="65%"/>
+						<normal alpha="0.5" font="Sans 10" color="#555555"/>
 						<text>%c</text>
 					</item>			
 
@@ -69,14 +69,14 @@
 						<normal file="session_button.png"/>
 						 <prelight file="session_button-li.png"/>
 						<active file="session_button-li.png"/>
-						<pos anchor="w" x="20" y="50%"/>
+						<pos anchor="w" x="5%" y="40%"/>
 					</item>
 
 					<item type="pixmap" id="system_button" button="true">
 						<normal file="system_button.png"/>
 						<prelight file="system_button-li.png"/>
 						<active file="system_button-li.png"/>
-						<pos anchor="w" x="60" y="50%"/>
+						<pos anchor="w" x="12%" y="40%"/>
 					</item>
 
 				</fixed>
@@ -92,7 +92,7 @@
 		<fixed>
 		
 			<item type="label" id="mesage">
-			<normal color="#0b678c" font="Sans Bold 10"/>
+			<normal color="#C1C1C1" font="Sans Bold 10"/>
 			<pos anchor="c" x="50%" y="85%"/>
 			<stock type="caps-lock-warning"/>
 			</item>
@@ -105,13 +105,13 @@
 	<pos anchor="c" x="50%" y="98%" widht="615" height="200"/>
 
 		<item type="label" id="dummy1">
-			<normal alpha="0" color="#0b678c" font="Sans Bold 10"/>
+			<normal alpha="0" color="#C1C1C1" font="Sans Bold 10"/>
 			<!-- </text> -->
 		</item>
 		
 		<item type="label" id="pam-error">
 			<pos anchor="c" x="50%" y="50%" expand="true"/>
-			<normal alpha="0" color="#0b678c" font="Sans Bold 10"/>
+			<normal alpha="0" color="#C1C1C1" font="Sans Bold 10"/>
 			<!-- </text> -->
 		</item>
 
