@@ -1,0 +1,16 @@
+Readme for gnome-shell-extension-frugalware-logo
+----------
+
+This is a gnome-shell extension that adds a Frugalware logo
+to the Activities button of the shell.
+(On right-to-left locales it appears on the top right corner,
+otherwise on the top left corner.)
+
+The extension is supposed to work with any Gnome shell theme.
+(Tested with some popular ones and the default one.)
+
+Special thanks to:
+ - Timur Kristóf for his work for Fedora logo extension
+ - Elad Alfassa for testing it on right-to-left locales.
+ - Rahul Sundaram for reviewing this package before submission.
+
