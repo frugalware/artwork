@@ -9,7 +9,7 @@ StaticServers=:0
 
 [Shutdown]
 BootManager=Grub
-HaltCmd=/sbin/halt
+HaltCmd=/sbin/halt -p
 RebootCmd=/sbin/reboot
 
 [X-*-Core]
