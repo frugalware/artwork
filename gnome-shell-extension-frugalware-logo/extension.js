@@ -45,7 +45,7 @@ function main() {
     
     // Getting the old style and using it as a base if it's not null
     let label = Main.panel.button.get_child();
-    let logo = new St.Icon({ icon_type: St.IconType.FULLCOLOR, icon_size: label.height, icon_name: 'distributor-logo' });
+    let logo = new St.Icon({ icon_type: St.IconType.FULLCOLOR, icon_size: label.height, icon_name: 'frugalware-logo' });
     let box = new St.BoxLayout();
     Main.panel.button.set_child(box);
     
