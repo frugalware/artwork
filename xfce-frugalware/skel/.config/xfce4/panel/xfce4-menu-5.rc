@@ -1,7 +1,0 @@
-use_default_menu=true
-menu_file=/etc/xdg/menus/xfce-applications.menu
-icon_file=/usr/share/icons/Frugalware/places/scalable/frugalware-logo.svg
-show_menu_icons=true
-button_title=Frugalware
-show_button_title=true
-
