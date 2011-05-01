@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+	<wallpaper deleted="false">    
+		<name>Frugalware 1.3 Haven (Widescreen)</name>
+		<filename>/usr/share/pixmaps/backgrounds/gnome/frugalware/1.3wide.png</filename>
+		<options>stretched</options>
+	</wallpaper>
+</wallpapers>
