@@ -7,44 +7,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
    width="16"
    height="16"
-   id="svg2"
-   version="1.1"
-   inkscape:version="0.48+devel r9942 custom"
-   sodipodi:docname="arrow-left.svg">
+   id="svg2">
   <defs
      id="defs4" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="7.7366092"
-     inkscape:cy="6.4536271"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     borderlayer="true"
-     inkscape:showpageshadow="false"
-     inkscape:window-width="930"
-     inkscape:window-height="681"
-     inkscape:window-x="1892"
-     inkscape:window-y="272"
-     inkscape:window-maximized="0">
-    <inkscape:grid
-       type="xygrid"
-       id="grid17403"
-       empspacing="5"
-       visible="true"
-       enabled="true"
-       snapvisiblegridlinesonly="true" />
-  </sodipodi:namedview>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -58,25 +26,43 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-1036.3622)">
-    <path
-       sodipodi:type="star"
-       style="fill:#5f5f5f;fill-opacity:1;stroke:#5f5f5f;stroke-width:0.43015847;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
-       id="path18028"
-       sodipodi:sides="3"
-       sodipodi:cx="84.5"
-       sodipodi:cy="337.5"
-       sodipodi:r1="5"
-       sodipodi:r2="2.5"
-       sodipodi:arg1="0.52359878"
-       sodipodi:arg2="1.5707963"
-       inkscape:flatsided="true"
-       inkscape:rounded="0"
-       inkscape:randomized="0"
-       d="M 88.830127,340 80.169873,340 84.5,332.5 z"
-       transform="matrix(0,1.3621708,-0.99186247,0,342.48324,929.32667)" />
+     transform="matrix(0,0.11060285,-0.15008444,0,13.979411,2.5169153)"
+     id="g2990">
+    <g
+       transform="matrix(0,-1.1688867,1.637152,0,4.4441632,-33.154527)"
+       id="g3885"
+       style="font-size:111.1867981px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;opacity:0.07438019;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book">
+      <path
+         d="m -90.683501,56.091573 56.594081,-25.795337 0,-7.227142 -56.594081,-25.6841499 0,8.6725701 44.697093,20.5695578 -44.697093,20.791931 0,8.67257"
+         id="path3887"
+         style="fill:#000000;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       transform="matrix(0,-1.1205746,1.637152,0,5.0517581,-29.077217)"
+       id="g3881"
+       style="font-size:111.1867981px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;opacity:0.21487606;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book">
+      <path
+         d="m -90.683501,56.091573 56.594081,-25.795337 0,-7.227142 -56.594081,-25.6841499 0,8.6725701 44.697093,20.5695578 -44.697093,20.791931 0,8.67257"
+         id="path3883"
+         style="fill:#000000;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       transform="matrix(0,-1.0829985,1.5854036,0,6.4354204,-25.365892)"
+       id="g3877"
+       style="font-size:111.1867981px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;opacity:0.37190085;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book">
+      <path
+         d="m -90.683501,56.091573 56.594081,-25.795337 0,-7.227142 -56.594081,-25.6841499 0,8.6725701 44.697093,20.5695578 -44.697093,20.791931 0,8.67257"
+         id="path3879"
+         style="fill:#000000;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       transform="matrix(0,-1.0185824,1.4353332,0,9.9923451,-21.043402)"
+       id="text2923"
+       style="font-size:111.1867981px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#3c3c3c;fill-opacity:1;stroke:#2b2b2b;stroke-width:0.83448154;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book">
+      <path
+         d="m -90.683501,56.091573 56.594081,-25.795337 0,-7.227142 -56.594081,-25.6841499 0,8.6725701 44.697093,20.5695578 -44.697093,20.791931 0,8.67257"
+         id="path3085"
+         style="fill:#282828;fill-opacity:1;stroke:none" />
+    </g>
   </g>
 </svg>
