@@ -90,15 +90,14 @@ ForegroundVisited=66,115,163
 
 [General]
 ColorScheme=Frugalware
-desktopFont=Sans Serif,9,-1,5,50,0,0,0,0,0
-fixed=DejaVu Sans Mono,10,-1,5,50,0,0,0,0,0
-font=Sans Serif,9,-1,5,50,0,0,0,0,0
-menuFont=Sans Serif,9,-1,5,50,0,0,0,0,0
+Name=Frugalware
 shadeSortColumn=true
-smallestReadableFont=Sans Serif,8,-1,5,50,0,0,0,0,0
-taskbarFont=Sans Serif,9,-1,5,50,0,0,0,0,0
-toolBarFont=Sans Serif,9,-1,5,50,0,0,0,0,0
-widgetStyle=qtcurve
 
-[Icons]
-Theme=Frugalware-KDE4
+[KDE]
+contrast=5
+
+[WM]
+activeBackground=215,215,215
+activeForeground=41,41,41
+inactiveBackground=215,215,215
+inactiveForeground=122,122,122
