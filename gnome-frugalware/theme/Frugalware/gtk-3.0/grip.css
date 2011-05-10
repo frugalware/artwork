@@ -1,21 +1,16 @@
 .grip {
-    background-color: shade (@inactive_frame_color, 0.93);
 }
 
 .pane-separator,
 .pane-separator:prelight,
 .pane-separator:selected {
-
     border-radius:  0;
-    border-width:   1;
-    border-style:   solid;
-
     background-image: -gtk-gradient (linear,
 				     left top,
 				     right top,
-				     from (shade (@base_color, 0.94)),
-				     to (@base_color));
-
-    border-color: shade (@bg_color, 0.78);
+				     from (shade (@base_color, 0.55)),
+                     color-stop (0.15, @base_color),
+                     color-stop (0.85, shade (@base_color, 0.88)),
+				     to (shade (@base_color, 0.55)));
 }
 
