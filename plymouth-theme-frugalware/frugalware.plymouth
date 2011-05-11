@@ -5,6 +5,6 @@ ModuleName=script
 
 [script]
 ImageDir=/usr/share/plymouth/themes/frugalware
-ScriptFile=/usr/share/plymouth/themes/paw-arch/frugalware.script
+ScriptFile=/usr/share/plymouth/themes/frugalware/frugalware.script
 
 
