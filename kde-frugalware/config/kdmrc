@@ -29,7 +29,7 @@ Startup=/etc/kde/config/kdm/Xstartup
 
 [X-*-Greeter]
 AntiAliasing=true
-ColorScheme=QtCurve
+ColorScheme=Frugalware
 EchoMode=OneStar
 FaceDir=/usr/share/apps/kdm/pics/users
 #FaceSource=AdminOnly

@@ -1,3 +1,10 @@
+[KDE]
+WidgetStyle=qtc_frugalware
+
+[Misc]
+Comment=QtCurve based theme
+Name=frugalware
+
 [Settings]
 activeTabAppearance=soft
 animatedProgress=false

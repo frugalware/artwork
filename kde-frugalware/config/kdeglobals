@@ -90,6 +90,7 @@ ForegroundVisited=66,115,163
 
 [General]
 ColorScheme=Frugalware
+activeFont=Bitstream Vera Sans,11,-1,5,75,0,0,0,0,0
 desktopFont=Sans Serif,9,-1,5,50,0,0,0,0,0
 fixed=DejaVu Sans Mono,10,-1,5,50,0,0,0,0,0
 font=Sans Serif,9,-1,5,50,0,0,0,0,0
@@ -98,7 +99,27 @@ shadeSortColumn=true
 smallestReadableFont=Sans Serif,8,-1,5,50,0,0,0,0,0
 taskbarFont=Sans Serif,9,-1,5,50,0,0,0,0,0
 toolBarFont=Sans Serif,9,-1,5,50,0,0,0,0,0
-widgetStyle=qtcurve
+widgetStyle=qtc_frugalware
 
 [Icons]
 Theme=Frugalware-KDE4
+
+[KDE]
+AutoSelectDelay=-1
+ChangeCursor=true
+DoubleClickInterval=400
+ShowDeleteCommand=true
+ShowIconsInMenuItems=true
+ShowIconsOnPushButtons=true
+SingleClick=true
+StartDragDist=4
+StartDragTime=500
+WheelScrollLines=3
+contrast=5
+
+[WM]
+activeBackground=215,215,215
+activeFont=Bitstream Vera Sans,11,-1,5,75,0,0,0,0,0
+activeForeground=41,41,41
+inactiveBackground=215,215,215
+inactiveForeground=122,122,122
