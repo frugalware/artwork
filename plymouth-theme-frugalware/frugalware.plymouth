@@ -1,0 +1,10 @@
+[Plymouth Theme]
+Name=Frugalware
+Description=Paw theme modified for Frugalware Linux
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/frugalware
+ScriptFile=/usr/share/plymouth/themes/paw-arch/frugalware.script
+
+
