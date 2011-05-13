@@ -1,10 +1,8 @@
 [Plymouth Theme]
 Name=Frugalware
-Description=Paw theme modified for Frugalware Linux
+Description=A theme that features a blank background with Frugalware logo.
 ModuleName=script
 
 [script]
 ImageDir=/usr/share/plymouth/themes/frugalware
 ScriptFile=/usr/share/plymouth/themes/frugalware/frugalware.script
-
-
