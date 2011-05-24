@@ -96,18 +96,45 @@ GtkSpinButton.button:active {
  * Notebooks and *
  * tabs          *
  *****************/
-.notebook {
+/* .notebook {
+    background-color:   shade (@bg_color, 1.06);
+    border-radius:                               4;
 }
 
 .notebook tab {
+    background-color:   shade (@bg_color, 0.85);
 }
 
 .notebook tab:active {
-}
+    background-color:   shade (@bg_color, 1.06);
+}*/
 
 .notebook tab .button,
 .notebook tab .button:hover,
 .notebook tab .button:hover:active {
+
+    background-image:   none;
+    background-color:   alpha (#000, 0.02);
+
+    -unico-border-gradient: -gtk-gradient (linear,
+                     left top, left bottom,
+                     from (shade (@bg_color, 0.67)),
+                     to (shade (@bg_color, 0.74)));
+
+    -unico-inner-stroke-gradient: -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (alpha (#000, 0.10)),
+                    to (alpha (#000, 0.06)));
+
+    -unico-outer-stroke-gradient: -gtk-gradient (linear,
+                     left top, left bottom,
+                     from (alpha (#fff, 0.00)),
+                     color-stop (0.85, alpha (#fff, 0.00)),
+                     to (alpha (#fff, 0.40)));
+}
+
+.notebook tab .button:hover:active {
+    background-color:   alpha (#000, 0.10);
 }
 
 /**************
@@ -370,12 +397,33 @@ column-header {
 column-header .button {
     -unico-outer-stroke-style:                  none;
     border-radius:                              0;
+    border-width:                              0;
+    -GtkButton-inner-border:                    2;
 
     background-image: -gtk-gradient (linear,
                     left top,
                     left bottom,
-                    from (shade (@base_color, 0.88)),
-                    to (@base_color));
+                    from (@base_color),
+                                     color-stop (0.04, shade (@base_color, 0.88)),
+                                     color-stop (0.96, @base_color),
+                                     color-stop (0.99, shade (@base_color, 0.50)),
+                    to (shade (@base_color, 0.45)));
+}
+
+column-header .button:hover {
+    -unico-outer-stroke-style:                  none;
+    border-radius:                              0;
+    border-width:                               0;
+    color:                                      @text_color;
+
+    background-image: -gtk-gradient (linear,
+                    left top,
+                    left bottom,
+                    from (shade (@base_color, 0.95)),
+                                     color-stop (0.04, shade (@base_color, 0.80)),
+                                     color-stop (0.96, @base_color),
+                                     color-stop (0.99, shade (@base_color, 0.50)),
+                    to (shade (@base_color, 0.45)));
 }
 
 row:hover {
@@ -451,7 +499,9 @@ CheeseThumbView /* Cheese */
 
 /* gnome-terminal */
 TerminalScreen {
-    -TerminalScreen-background-darkness: 0.95;
+    background-color: #000;
+    color: #fff;
+    -TerminalScreen-background-darkness: 0.85;
 }
 
 /**********************

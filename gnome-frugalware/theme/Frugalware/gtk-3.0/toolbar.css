@@ -11,8 +11,8 @@
                                      color-stop (0.93, shade (@bg_color, 0.82)),
                                      color-stop (0.94, shade (@bg_color, 0.89)),
                                      color-stop (0.96, shade (@bg_color, 0.89)),
-                                     color-stop (0.99, shade (@bg_color, 0.50)),
-				     to (shade (@bg_color, 0.50)));
+                                     color-stop (0.99, shade (@bg_color, 0.55)),
+				     to (shade (@bg_color, 0.55)));
     border-width: 0;
     padding: 2;
     -GtkWidget-window-dragging: true;
@@ -50,23 +50,8 @@
     border-color: shade (@theme_bg_color, 0.91);
 }
 
-/* progressbars on primary toolbar entries are special */
-.primary-toolbar.toolbar.entry.progressbar {
-    /* FIXME: need correct colors/gradient */
-    background-image: -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from (@trough_bg_color_a),
-                                     to (@trough_bg_color_b));
-
-    border-width: 0;
-    border-radius: 2;
-    border-color: shade (@inactive_frame_color, 0.925);
-}
-
 .primary-toolbar.toolbar.separator {
-    border-style: solid;
-    border-width: 1;
-    border-color: shade (@theme_bg_color, 0.56);
+    border-width: 0;
 }
 
 /*******************

@@ -4,11 +4,6 @@
 
 /* this controls the general appearance of the menubar */
 .menubar {
-    background-image: -gtk-gradient (linear,
-				     left top, left bottom,
-				     from (@theme_bg_color),
-				     color-stop (0.45, shade (@theme_bg_color, 0.97)),
-				     to (shade (@theme_bg_color, 0.99)));
     border-width: 0;
     border-style: none;
     padding: 4;
@@ -49,7 +44,7 @@
 
 }
 
-.menuitem {
+.menu.menuitem {
     -unico-menuitem-arrow-color: @menu_controls_color;
     font: bold;
     padding: 2;

@@ -9,8 +9,8 @@
     background-image: -gtk-gradient (linear,
                     left top,
                     left bottom,
-                    from (@base_color),
-                    to (shade (@base_color, 0.88)));
+                    from (shade (@bg_color, 1.15)),
+                    to (shade (@bg_color, 1.03)));
 
     -unico-border-gradient: -gtk-gradient (linear,
                     left top, left bottom,
@@ -21,11 +21,6 @@
                     left top, left bottom,
                     from (alpha (#000, 0.00)),
                     to (alpha (#000, 0.10)));
-
-    -unico-focus-border-gradient: -gtk-gradient (linear,
-                    left top, left bottom,
-                    from (alpha (@keyboard_focus_border_a, 0.62)),
-                    to (alpha (@keyboard_focus_border_b, 0.62)));
 }
 
 .button:hover,
@@ -43,8 +38,8 @@
     background-image: -gtk-gradient (linear,
 				     left top,
 				     left bottom,
-				     from (shade (@base_color, 0.54)),
-				     to (shade (@base_color, 0.76)));
+				     from (shade (@bg_color, 0.54)),
+				     to (shade (@bg_color, 0.76)));
 
     -unico-outer-stroke-gradient: -gtk-gradient (linear,
                      left top, left bottom,
