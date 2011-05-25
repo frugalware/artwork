@@ -14,6 +14,7 @@
         <value type="int" value="6"/>
         <value type="int" value="2"/>
       </property>
+      <property name="size" type="uint" value="24"/>
     </property>
     <property name="panel-1" type="empty">
       <property name="position" type="string" value="p=10;x=0;y=0"/>
@@ -42,11 +43,7 @@
     <property name="plugin-5" type="string" value="clock"/>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
-        <value type="string" value="hp-systray"/>
-        <value type="string" value="liferea"/>
-        <value type="string" value="frugalware-tweak2"/>
         <value type="string" value="thunar"/>
-        <value type="string" value="xchat"/>
       </property>
     </property>
     <property name="plugin-7" type="string" value="showdesktop"/>
