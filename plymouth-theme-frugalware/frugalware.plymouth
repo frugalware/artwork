@@ -4,5 +4,5 @@ Description=Default plymouth theme for Frugalware Linux
 ModuleName=script
 
 [script]
-ImageDir=/lib/plymouth/themes/frugalware
-ScriptFile=/lib/plymouth/themes/frugalware/frugalware.script
+ImageDir=/usr/share/plymouth/themes/frugalware
+ScriptFile=/usr/share/plymouth/themes/frugalware/frugalware.script
