@@ -1,38 +1,35 @@
-#  frugalware-logo.script - boot splash plugin
+#  frugalware.script - boot splash plugin
 # 
-#  Copyright (C) 2009 Canonical Ltd.
-# 
-#  This program is free software; you can redistribute it and/or modify
-#  it under the terms of the GNU General Public License as published by
-#  the Free Software Foundation; either version 2, or (at your option)
-#  any later version.
-# 
-#  This program is distributed in the hope that it will be useful,
-#  but WITHOUT ANY WARRANTY; without even the implied warranty of
-#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#  GNU General Public License for more details.
-# 
-#  You should have received a copy of the GNU General Public License
-#  along with this program; if not, write to the Free Software
-#  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
-#  02111-1307, USA.
-# 
-# Re-written by Rafael Laguna <rafaellaguna@gmail.com> based from
-#  original by Alberto Milone <alberto.milone@canonical.com>
-#
-#  Based on the example provided with the "script plugin" written by:
-#              Charlie Brej   <cbrej@cs.man.ac.uk>
-# 
+
+Window.GetMaxWidth = fun (){
+  i = 0;
+  width = 0;
+  while (Window.GetWidth(i)){
+    width = Math.Max(width, Window.GetWidth(i));
+    i++;
+    }
+  return width;
+};
+
+Window.GetMaxHeight = fun (){
+  i = 0;
+  height = 0;
+  while (Window.GetHeight(i)){
+    height = Math.Max(height, Window.GetHeight(i));
+    i++;
+    }
+  return height;
+};
 
 # Set the text colour in (rgb / 256)
 text_colour.red = 1.0;
 text_colour.green = 1.0;
 text_colour.blue = 1.0;
 
-# Tinted text #988592
-tinted_text_colour.red = 0.59;
-tinted_text_colour.green = 0.52;
-tinted_text_colour.blue = 0.57;
+# Tinted text #e2e3e3
+tinted_text_colour.red = 0.83;
+tinted_text_colour.green = 0.84;
+tinted_text_colour.blue = 0.84;
 
 # Action Text - #ffffff - RGB 255 255 255
 action_text_colour.red = 1.0;
@@ -88,16 +85,17 @@ fun TextYOffset() {
     local.min_height;
 
     # Put the 1st line below the logo + some spacing 
-    y = logo.y + logo.height + (progress_indicator.bullet_height * 7 ); # + logo_spacing;
+    y = logo.y + logo.height + (Window.GetHeight() / 20);
 
     text_height = first_line_height * 7.5;
-
+/*
     min_height = Window.GetHeight();
     if (y + text_height > min_height)
         y = min_height - text_height;
 
     if (y < progress_indicator.y + progress_indicator.height)
         return progress_indicator.y + progress_indicator.height;
+*/
     return y;
 }
 
@@ -164,27 +162,60 @@ fun StringToInteger (str) {
 # New background colour
 # #2c001e --> 0.16, 0.00, 0.12
 #
-# New frugalware background, it's just black
-# 0.00, 0.00, 0.00
+Window.SetBackgroundTopColor (0.4, 0.4, 0.4);     # Nice colour on top of the screen fading to
+Window.SetBackgroundBottomColor (0.4, 0.4, 0.4);  # an equally nice colour on the bottom
 
-Window.SetBackgroundTopColor (0.00, 0.00, 0.00);     # Nice colour on top of the screen fading to
-Window.SetBackgroundBottomColor (0.00, 0.00, 0.00);  # an equally nice colour on the bottom
+/* bits_per_pixel = Window.GetBitsPerPixel ();
+if (bits_per_pixel == 4) {
+    logo_filename = "ubuntu_logo16.png";
+    progress_dot_off_filename = "progress_dot_off16.png";
+    progress_dot_on_filename = "progress_dot_on16.png";
+    password_field_filename = "password_field16.png"; */
+#} else {
+    logo_filename = "logo.png";
+    logo_normal_filename = "logo_normal.png";
+#    progress_dot_off_filename = "progress_dot_off.png";
+#    progress_dot_on_filename = "progress_dot_on.png";
+    password_field_filename = "password_field.png";
+#}
 
-logo.image = Image ("frugalware_logo.png"); # "special://logo" is a special keyword which finds the logo image
+wallpaper_image = Image("wallpaper.png");
+screen_width = Window.GetMaxWidth();
+screen_height = Window.GetMaxHeight();
+resized_wallpaper_image = wallpaper_image.Scale(screen_width,screen_height);
+wallpaper_sprite = Sprite(resized_wallpaper_image);
+#wallpaper_sprite.SetX(Window.GetX ());
+#wallpaper_sprite.SetY(Window.GetY ());
+wallpaper_sprite.SetZ(-10000);
+
+logo.image = Image (logo_filename);
+logo_normal.image = Image (logo_normal_filename);
 logo.sprite = Sprite ();
+logo_normal.sprite = Sprite(logo_normal.image);
 logo.sprite.SetImage (logo.image);
+logo_normal.sprite.SetImage (logo_normal.image);
 logo.width = logo.image.GetWidth ();
+logo_normal.width = logo_normal.image.GetWidth ();
 logo.height = logo.image.GetHeight ();
+logo_normal.height = logo_normal.image.GetHeight ();
 logo.x = Window.GetX () + Window.GetWidth () / 2 - logo.width  / 2;
-logo.y = Window.GetY () + Window.GetHeight () / 2 - logo.height;
+logo_normal.x = Window.GetX () + Window.GetWidth () / 2 - logo_normal.width  / 2;
+logo.y = Window.GetY () + Window.GetHeight () / 2 - logo.height / 2;
+logo_normal.y = Window.GetY () + Window.GetHeight () / 2 - logo_normal.height;
 logo.z = 1000;
+logo_normal.z = 1200;
 logo.sprite.SetX (logo.x);
+logo_normal.sprite.SetX (logo.x);
 logo.sprite.SetY (logo.y);
+logo_normal.sprite.SetY (logo.y);
 logo.sprite.SetZ (logo.z);
+logo_normal.sprite.SetZ (logo.z);
 logo.sprite.SetOpacity (1);
+logo_normal.sprite.SetOpacity (1);
+logo.opacity_angle = 0;
 
 # Spacing below the logo - in pixels
-logo_spacing = logo.height * 4;
+logo_spacing = logo.height;
 
 message_notification[0].image = ImageToTintedText ("");
 message_notification[1].image = ImageToTintedText ("");
@@ -192,8 +223,9 @@ fsck_notification.image = ImageToActionText ("");
 
 status = "normal";
 
-progress_indicator.bullet_off = Image ("progress_dot_off.png");
-progress_indicator.bullet_on = Image ("progress_dot_on.png");
+/*
+progress_indicator.bullet_off = Image (progress_dot_off_filename);
+progress_indicator.bullet_on = Image (progress_dot_on_filename);
 progress_indicator.bullet_width = progress_indicator.bullet_off.GetWidth ();
 progress_indicator.bullet_height = progress_indicator.bullet_off.GetHeight ();
 progress_indicator.bullet_hspacing = progress_indicator.bullet_width * 1.1;
@@ -201,6 +233,7 @@ progress_indicator.width = progress_indicator.bullet_width * 5;
 progress_indicator.height = progress_indicator.bullet_height;
 progress_indicator.y = logo.y + logo.height + (logo.height / 4);
 progress_indicator.x = Window.GetX () + Window.GetWidth () / 2 - progress_indicator.width / 2; # logo.x + 26;
+*/
 
 # use a fixed string with ascending and descending stems to calibrate the
 # bounding box for the first message, so the messages below don't move up
@@ -226,7 +259,7 @@ fun draw_logo () {
 #-----------------------------------------Progress Indicator--------------------------
 fun set_progress_indicator () {
     
-    
+/*    
     # Here we assume that we can store half bullets on each half of the screen
     # together with some spacing
     local.x = progress_indicator.x;
@@ -258,6 +291,7 @@ fun set_progress_indicator () {
     #local.debug_string = "Progress indicator: x1 = " + progress_indicator.x + ", x2 = " + local.x + ", y = " + progress_indicator.y +
     #                      ", x logo = " + logo.x + ", y logo = " + logo.y + ", indicator width = " + progress_indicator.width;
     #Debug(progress_indicator.bullets_off[0].x);
+*/
 }
 
 
@@ -265,6 +299,7 @@ fun set_progress_indicator () {
 # The white one is on top of the red one and the former should
 # slowly fade so as to get a nice transition effect.
 fun switch_on_bullet (bullets_off, bullets_on, bullet_number, opacity) {
+/*
     local.x = bullets_on[bullet_number].x;
     local.y = bullets_on[bullet_number].y;
     local.z = bullets_on[bullet_number].z;
@@ -278,18 +313,22 @@ fun switch_on_bullet (bullets_off, bullets_on, bullet_number, opacity) {
     
     # Bump the number of times we have switched on bullets
     global.times_bullets_switched++;
+*/
 }
 
 fun switch_off_bullets () {
+/*
     # Debug("Switching off progress indicator");
     
     set_progress_indicator ();
     global.times_bullets_switched = 0;
     global.on_off = 1;
+*/
 }
 
 # This is something that we can call when we exit
 fun switch_on_bullets () {
+/*
     # Debug("Switching off progress indicator");
     if (!global.progress_indicator.bullets_on) set_progress_indicator ();
     local = global.progress_indicator;
@@ -297,11 +336,13 @@ fun switch_on_bullets () {
     for (index = 0; bullets_on[index]; index++) {
         switch_on_bullet (bullets_off, bullets_on, index, 1.0);
     }
+*/
 }
 
 
 # Implement in boot progress callback
 fun animate_progress_indicator (progress, time) {
+/*
     if (global.progress_time == NULL) {
         global.progress_time = progress;  #time;
         switch_off_bullets ();
@@ -335,7 +376,7 @@ fun animate_progress_indicator (progress, time) {
         }
     }
     
-    
+*/    
     # Start setting bullets to "on" with translucency
 #    for (index = 0; index <= 5; index++) {
 #        opacity = 0.0;
@@ -496,8 +537,8 @@ fun password_dialogue_setup (message_label) {
     local.entry;
     local.bullet_image;
     
-    bullet_image = Image ("progress_dot_off.png");
-    entry.image = Image ("password_field.png");
+    bullet_image = Image (progress_dot_off_filename);
+    entry.image = Image (password_field_filename);
     
     # Hide the normal labels
     prompt_active = 1;
@@ -1009,9 +1050,23 @@ Plymouth.SetUpdateStatusFunction (update_status_callback);
 #       the screen correctly
 #
 fun refresh_callback ()
-{
-    draw_logo ();
-}
+  {
+    if (status == "normal")
+      {
+        logo.opacity_angle += ((2 * 3.14) / 50) * 0.25;  # 0.25 HZ
+        min_opacity = 0.1;
+        opacity = (Math.Cos(logo.opacity_angle) + 1) / 2;
+        opacity *= 1 - min_opacity;
+        opacity += min_opacity;
+        logo.sprite.SetOpacity (opacity);
+      }
+    else
+      {
+        logo.sprite.SetX (Window.GetX() + Window.GetWidth()  / 2 - logo.image.GetWidth()  / 2);
+        logo.sprite.SetY (Window.GetY() + Window.GetHeight() / 2 - logo.image.GetHeight() / 2);
+        logo.sprite.SetOpacity (1);
+      }
+  }
 Plymouth.SetRefreshFunction (refresh_callback);
 
 
