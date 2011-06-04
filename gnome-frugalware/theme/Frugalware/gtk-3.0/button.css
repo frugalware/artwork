@@ -38,8 +38,8 @@
     background-image: -gtk-gradient (linear,
 				     left top,
 				     left bottom,
-				     from (shade (@bg_color, 0.54)),
-				     to (shade (@bg_color, 0.76)));
+				     from (shade (@bg_color, 0.69)),
+				     to (shade (@bg_color, 0.91)));
 
     -unico-outer-stroke-gradient: -gtk-gradient (linear,
                      left top, left bottom,
@@ -49,12 +49,12 @@
 
     -unico-border-gradient: -gtk-gradient (linear,
                      left top, left bottom,
-                     from (shade (@bg_color, 0.46)),
-                     to (shade (@bg_color, 0.58)));
+                     from (shade (@bg_color, 0.54)),
+                     to (shade (@bg_color, 0.68)));
 
     -unico-inner-stroke-gradient: -gtk-gradient (linear,
                     left top, left bottom,
-                    from (alpha (#000, 0.12)),
+                    from (alpha (#000, 0.10)),
                     to (alpha (#000, 0.06)));
 }
 
@@ -113,4 +113,8 @@
  ***************************/
 .primary-toolbar.toolbar.button {
     -GtkButton-inner-border:    5;
+}
+
+.marlin-pathbar {
+    padding: 4;
 }
