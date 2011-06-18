@@ -260,7 +260,7 @@ GtkComboBox.button {
  *************/
 
 GtkSwitch {
-    padding:    2;
+    padding:    1;
     font: bold condensed 10;
 }
 
@@ -337,7 +337,6 @@ GtkSwitch.trough:insensitive {
 
 GtkSwitch.slider {     
     -unico-outer-stroke-style:              none;
-
     border-width: 1;    
 
     background-image: -gtk-gradient (linear,
@@ -362,6 +361,16 @@ GtkSwitch.slider:active {
 }
 
 GtkSwitch.slider:insensitive {
+    background-image: -gtk-gradient (linear,
+				     left top,
+				     left bottom,
+                     from (shade (@bg_color, 1.06)),
+                     to (shade (@bg_color, 0.88)));
+
+    -unico-border-gradient: -gtk-gradient (linear,
+                     left top, left bottom,
+                     from (shade (@bg_color, 0.76)),
+                     to (shade (@bg_color, 0.70)));
 }
 
 GtkStatusbar {
