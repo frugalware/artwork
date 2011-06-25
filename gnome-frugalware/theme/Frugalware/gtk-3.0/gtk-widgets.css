@@ -35,6 +35,15 @@
     engine: unico;
         -unico-inner-stroke-color:              alpha (#fff, 0.30);
         -unico-text-shadow-color:              alpha (#fff, 0.30);
+
+        -unico-bullet-color:                    shade (@bg_color, 0.535);
+        -unico-bullet-outline-color:           shade (@bg_color, 1.2);
+
+        -unico-focus-border-color:              alpha (@selected_bg_color, 0.5);
+        -unico-focus-border-radius:              2;
+        -unico-focus-fill-color:                alpha (@selected_bg_color, 0.1);
+        -unico-focus-outer-stroke-color:        alpha (@selected_bg_color, 0.0);
+
         -unico-outer-stroke-style:              custom;
         -unico-outer-stroke-gradient:           -gtk-gradient (linear,
                                                 left top, left bottom,
@@ -52,10 +61,6 @@
     -GtkWidget-wide-separators: 1;
     -WnckTasklist-fade-overlay-rect: 0;
     -GtkWidget-focus-line-width: 1;
-    -unico-focus-border-color: alpha (@theme_text_color, 0.4);
-    -unico-focus-border-radius: 2;
-    -unico-focus-fill-color: none;
-    -unico-focus-border-gradient: none;
 */
 
 

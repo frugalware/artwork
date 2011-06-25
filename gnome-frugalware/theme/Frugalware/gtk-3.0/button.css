@@ -26,6 +26,22 @@
 .button:hover,
 .primary-toolbar.toolbar.button:hover {
 
+    color:          @text_color;
+    
+
+    background-image: -gtk-gradient (linear,
+                    left top,
+                    left bottom,
+                    from (shade (@bg_color, 1.13)),
+                    to (shade (@bg_color, 1.05)));
+
+
+    -unico-outer-stroke-gradient: -gtk-gradient (linear,
+                     left top, left bottom,
+                     from (alpha (#fff, 0.00)),
+                     color-stop (0.75, alpha (#fff, 0.00)),
+                     to (alpha (#fff, 0.15)));
+
 }
 
 .button:active,
