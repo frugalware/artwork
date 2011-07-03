@@ -9,12 +9,6 @@ GtkScale {
 }
 
 GtkScale.slider {
-    border-radius:      0;
-
-    -unico-outer-stroke-gradient: -gtk-gradient (linear,
-                left top, left bottom,
-                from (alpha (#000, 0.00)),
-                to (alpha (#000, 0.10)));
 }
 
 GtkScale.slider:insensitive {
@@ -33,24 +27,6 @@ GtkScale.scale-has-marks-above.slider.vertical {
 }
 
 GtkScale.trough {
-    border-radius:  10;
-
-    background-image: -gtk-gradient (linear,
-				     left top,
-				     left bottom,
-				     from (shade (@bg_color, 0.75)),
-				     to (shade (@bg_color, 0.90)));
-
-    -unico-border-gradient: -gtk-gradient (linear,
-                     left top, left bottom,
-                     from (shade (@bg_color, 0.46)),
-                     to (shade (@bg_color, 0.58)));
-
-    -unico-inner-stroke-gradient: -gtk-gradient (linear,
-                    left top, left bottom,
-                    from (alpha (#000, 0.12)),
-                    to (alpha (#000, 0.06)));
-
     -unico-outer-stroke-gradient: -gtk-gradient (linear,
                      left top, left bottom,
                      from (alpha (#fff, 0.00)),

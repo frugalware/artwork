@@ -36,8 +36,7 @@
                                      color-stop (0.95, shade (@theme_bg_color, 0.94)),
                                      color-stop (0.97, shade (@theme_bg_color, 0.94)),
                                      color-stop (0.99, shade (@theme_bg_color, 0.60)),
-				     to (shade (@theme_bg_color, 0.60)));
-    border-width: 0;
+				     to (shade (@bg_color, 0.60)));
     padding: 2;
     -GtkWidget-window-dragging: true;
 }

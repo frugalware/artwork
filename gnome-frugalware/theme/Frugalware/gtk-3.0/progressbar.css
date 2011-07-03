@@ -28,19 +28,4 @@ GtkProgressBar.progressbar {
 }
 
 GtkProgressBar.trough {
-    background-image: -gtk-gradient (linear,
-				     left top,
-				     left bottom,
-				     from (shade (@base_color, 0.54)),
-				     to (shade (@base_color, 0.76)));
-
-    -unico-border-gradient: -gtk-gradient (linear,
-                     left top, left bottom,
-                     from (shade (@bg_color, 0.46)),
-                     to (shade (@bg_color, 0.58)));
-
-    -unico-inner-stroke-gradient: -gtk-gradient (linear,
-                    left top, left bottom,
-                    from (alpha (#000, 0.12)),
-                    to (alpha (#000, 0.06)));
 }

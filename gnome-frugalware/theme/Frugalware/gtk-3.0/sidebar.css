@@ -5,6 +5,10 @@
     color:                      shade (@bg_color, 0.55);
 }
 
+.sidebar.view:selected {
+    background-color:         shade (@bg_color, 0.85);
+}
+
 .sidebar.view:prelight {
     background-color:         shade (@bg_color, 1.10);
 }
@@ -22,5 +26,5 @@ GtkHCollapsablePaned.pane-separator:selected {
 				     right top,
 				     from (shade (@bg_color, 1.30)),
 				     to (shade (@bg_color, 0.65)));
-    background-color: none;
+    background-color: alpha(#fff, 0.0);
 }
