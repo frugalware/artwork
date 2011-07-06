@@ -30,7 +30,7 @@
     border-style: none;
 }
 
-.menu {
+/*.menu {
     padding: 1;
     background-color: alpha (#000, 0.8);
     border-style: solid;
@@ -42,12 +42,26 @@
     -GtkMenuItem-arrow-scaling: 0.4;
     color: #fff;
 
+} */
+
+.menu {
+    -GtkMenu-horizontal-padding: 0;
+    -GtkMenu-vertical-padding: 0;
+    -GtkWidget-wide-separators: 1;
+
+	background-image: none;
+	background-color: #383838;
+	border-width: 1;
+	color: @base_color;	
+    border-color: #000;
+
+    -unico-inner-stroke-color:                  alpha (#fff, 0.00);
+    -unico-outer-stroke-style: none;
 }
 
 .menu.menuitem {
     -unico-menuitem-arrow-color: @menu_controls_color;
-    font: bold;
-    padding: 2;
+    /*font: bold;*/
 }
 
 .menuitem.accelerator {
@@ -67,8 +81,6 @@
 .menuitem:prelight {
     color: @selected_fg_color;
     border-style: solid;
-    border-width: 1;
-    border-radius: 0;
 
     background-image: -gtk-gradient (linear,
                     left top,
@@ -86,6 +98,7 @@
 }
 
 .menu.separator {
+    
     -unico-border-gradient: -gtk-gradient (linear,
                                              left top, right top,
                                              from (alpha (@base_color, 0.00)),

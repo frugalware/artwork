@@ -1,32 +1,7 @@
-/************
- * Toolbars *
- ***********/
-
-.secondary-toolbar.toolbar {
-    background-image: -gtk-gradient (linear,
-				     left top,
-				     left bottom,
-				     from (shade (@bg_color, 0.96)),
-                                     color-stop (0.05, shade (@bg_color, 0.87)),
-                                     color-stop (0.93, shade (@bg_color, 0.82)),
-                                     color-stop (0.94, shade (@bg_color, 0.89)),
-                                     color-stop (0.96, shade (@bg_color, 0.89)),
-                                     color-stop (0.99, shade (@bg_color, 0.55)),
-				     to (shade (@bg_color, 0.55)));
-    border-width: 0;
-    padding: 2;
-    -GtkWidget-window-dragging: true;
-}
-
-.secondary-toolbar.toolbar:insensitive {
-    color: alpha (@theme_fg_color, 0.6);
-}
-
 /********************
  * Primary Toolbars *
  ********************/
 
-.primary-toolbar.toolbar,
 .toolbar {
     background-image: -gtk-gradient (linear,
 				     left top,
@@ -38,10 +13,8 @@
                                      color-stop (0.99, shade (@theme_bg_color, 0.60)),
 				     to (shade (@bg_color, 0.60)));
     padding: 2;
-    -GtkWidget-window-dragging: true;
 }
 
-.primary-toolbar.toolbar:insensitive,
 .toolbar:insensitive {
     background-image: none;
     background-color: shade (@theme_bg_color, 0.97);
@@ -51,7 +24,6 @@
     border-color: shade (@theme_bg_color, 0.91);
 }
 
-.primary-toolbar.toolbar.separator,
 .toolbar.separator {
     border-width: 0;
 }

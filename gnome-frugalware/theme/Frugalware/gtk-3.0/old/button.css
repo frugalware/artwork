@@ -1,0 +1,14 @@
+/***********
+ * Buttons *
+ ***********/
+
+
+.button.default {
+}
+
+/***************************
+ * Primary Toolbar Buttons *
+ ***************************/
+.primary-toolbar.toolbar.button {
+    -GtkButton-inner-border:    5;
+}
