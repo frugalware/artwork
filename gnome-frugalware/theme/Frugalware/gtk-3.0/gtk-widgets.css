@@ -1,12 +1,84 @@
 * {
     engine: unico;
 
+    -unico-inner-stroke-color: rgba (0, 0, 0, 0);
+    -unico-focus-border-color:             alpha (#fff, 0.0);
+    -unico-focus-border-radius:              2;
+    -unico-focus-fill-color:                alpha (#fff, 0.0);
+    -unico-focus-outer-stroke-color:        alpha (#fff, 0.0);
+/*
     -unico-focus-border-color:             alpha (@selected_bg_color, 0.5);
     -unico-focus-border-radius:              2;
     -unico-focus-fill-color:                alpha (@selected_bg_color, 0.1);
     -unico-focus-outer-stroke-color:        alpha (@selected_bg_color, 0.0);
+*/
 }
 
+
+/***************
+ * Base States *
+ ***************/
+
+*:hover {
+}
+
+*:selected {
+}
+
+*:selected:focused {
+}
+
+*:insensitive {
+    color: shade (@theme_bg_color, 0.6);
+}
+
+*:active {
+}
+
+.background {
+}
+
+.tooltip {
+}
+
+
+/* No focus border */
+
+.button:active,
+.button:hover:active, 
+PostlerMessages {
+    -unico-focus-border-color:             alpha (#fff, 0.0);
+    -unico-focus-fill-color:                alpha (#fff, 0.0);
+    -unico-focus-outer-stroke-color:        alpha (#fff, 0.0);
+}
+/*******
+* Text *
+*******/
+
+/* white text */
+
+.button:active,
+.button:hover:active,
+.button.warning,
+.menuitem:active,
+.menuitem:prelight,
+GtkSwitch.trough:active,
+TerminalScreen {
+    color: @selected_fg_color;
+}
+
+/* etched text */
+
+*:insensitive,
+.secondary-toolbar {
+    text-shadow: 0 1 alpha (#fff, 0.4);
+}
+
+/* text shadow */
+
+.button:active {
+    text-shadow: 0 1 alpha (#000, 0.3);
+}
 
 /*********
 * Border *
@@ -30,9 +102,11 @@ GtkProgressBar.trough,
 GtkScale.trough,
 GtkSwitch,
 GtkSwitch.slider,
-GtkSwitch.trough {
+GtkSwitch.trough,
+PostlerMessages.view row:selected {
     -unico-outer-stroke-style:               custom;
     border-width:                             1;
+    border-style: solid;
 }
 
 /************
@@ -74,7 +148,9 @@ GtkScale.trough {
 .button,
 .menu.menuitem,
 .notebook,
-GtkSwitch {
+GtkProgressBar.progressbar,
+GtkSwitch,
+PostlerMessages.view row:selected {
         -unico-inner-stroke-color:                  alpha (#fff, 0.30);
 }
 
@@ -156,7 +232,7 @@ GtkScale.slider {
 .radio:insensitive,
 GtkProgressBar.trough,
 GtkScale.trough,
-GtkSwitch.trough:insensitive {
+GtkSwitch.trough {
     background-image: -gtk-gradient (linear,
 			         left top,
 			         left bottom,
@@ -169,6 +245,36 @@ GtkSwitch.trough:insensitive {
                      from (shade (@bg_color, 0.67)),
                      to (shade (@bg_color, 0.74)));
 }
+
+.marlin-pathbar {
+    padding: 4;
+}
+
+
+/* Postler */
+
+PostlerMessages {
+    -GtkTreeView-vertical-separator:            10;
+}
+
+
+PostlerMessages.view row:selected {
+
+    -unico-outer-stroke-style: none;
+
+    color:#333;
+
+    background-image: -gtk-gradient (linear, 
+        left top, left bottom, 
+        from (#DCDCDC),
+        to (#C7C7C7));
+
+    -unico-border-gradient: -gtk-gradient (linear,
+        left top, left bottom,
+        from (shade (@base_color, 0.70)),
+        to (shade (@base_color, 0.64)));
+}
+
 
 @import url("button.css");
 
@@ -216,11 +322,6 @@ GtkSwitch.trough:insensitive {
 
 }
 
-.marlin-pathbar {
-    padding: 4;
-}
-
-
 /*****************
  * Notebooks and *
  * Tabs          *
@@ -261,6 +362,8 @@ GtkSwitch.trough:insensitive {
 .pane-separator,
 .pane-separator:prelight,
 .pane-separator:selected {
+    engine: gtk;
+
     border-width:                             0;
     
     background-image: -gtk-gradient (linear,
@@ -271,6 +374,7 @@ GtkSwitch.trough:insensitive {
                      color-stop (0.85, shade (@base_color, 0.88)),
 				     to (shade (@base_color, 0.55)));
 }
+
 
 .button:active:insensitive {
 
@@ -310,18 +414,18 @@ GtkSwitch.trough:insensitive {
 }
 
 .secondary-toolbar.toolbar {
-        -GtkToolbar-internal-padding:               0;
+        -GtkToolbar-internal-padding:               1;
 
         background-image: -gtk-gradient (linear,
 			     left top,
 			     left bottom,
-			     from (shade (@bg_color, 0.96)),
+			     from (@bg_color),
                                  color-stop (0.05, shade (@bg_color, 0.87)),
-                                 color-stop (0.93, shade (@bg_color, 0.82)),
+                                 color-stop (0.93, shade (@bg_color, 0.80)),
                                  color-stop (0.94, shade (@bg_color, 0.89)),
-                                 color-stop (0.96, shade (@bg_color, 0.89)),
-                                 color-stop (0.99, shade (@bg_color, 0.55)),
-			     to (shade (@bg_color, 0.55)));
+                                 color-stop (0.95, shade (@bg_color, 0.89)),
+                                 color-stop (0.99, shade (@bg_color, 0.50)),
+			     to (shade (@bg_color, 0.50)));
 }
 
 /********
@@ -336,10 +440,6 @@ GtkSwitch.trough:insensitive {
         background-color: @selected_bg_color
 }
 
-/***********************************************************************
-* Stuff I haven't styled yet                                           *
-***********************************************************************/
-
 /*
     -GtkButton-interior-focus: true;
     -GtkToolItemGroup-expander-size: 12;
@@ -351,30 +451,6 @@ GtkSwitch.trough:insensitive {
 */
 
 .grip {
-}
-
-/***************
- * Base States *
- ***************/
-*:hover {
-}
-
-*:selected {
-}
-
-*:selected:focused {
-}
-
-*:insensitive {
-}
-
-*:active {
-}
-
-.background {
-}
-
-.tooltip {
 }
 
 /*****************
@@ -465,26 +541,8 @@ GtkSwitch {
     font: bold condensed 10;
 }
 
-GtkSwitch.trough {
-
-    color:          @text_color;
-
-    background-image: -gtk-gradient (linear,
-				     left top,
-				     left bottom,
-				     from (shade (@base_color, 0.54)),
-				     to (shade (@base_color, 0.76)));
-
-
-    -unico-border-gradient: -gtk-gradient (linear,
-                     left top, left bottom,
-                     from (shade (@bg_color, 0.46)),
-                     to (shade (@bg_color, 0.58)));
-
-}
 
 GtkSwitch.trough:active {
-    color:          #fff;
 
     background-image: -gtk-gradient (linear,
 				     left top,
@@ -605,7 +663,7 @@ column-header .button {
 
         -unico-border-gradient: -gtk-gradient (linear,
         left top, left bottom,
-        from (shade (@bg_color, 0.88)),
+        from (shade (@bg_color, 0.94)),
         to (shade (@bg_color, 0.70)));
 
 }
@@ -693,7 +751,6 @@ CheeseThumbView /* Cheese */
 /* gnome-terminal */
 TerminalScreen {
     background-color: #000;
-    color: #fff;
     -TerminalScreen-background-darkness: 0.85;
 }
 

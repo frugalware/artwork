@@ -79,7 +79,6 @@
 
 .menuitem:active,
 .menuitem:prelight {
-    color: @selected_fg_color;
     border-style: solid;
 
     background-image: -gtk-gradient (linear,

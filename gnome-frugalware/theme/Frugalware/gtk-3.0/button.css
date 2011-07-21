@@ -8,6 +8,7 @@
     -GtkButton-default-border:                 0;
     -GtkButton-image-spacing:                    0;
     -GtkButton-inner-border:                    3;
+    -GtkButton-interior-focus:                  true; 
 
     background-image: -gtk-gradient (linear,
         left top,
@@ -21,10 +22,12 @@
         to (shade (@bg_color, 0.60)));
 }
 
+.button:hover {
+    color:@text_color;
+}
+
 .button:active,
 .button:hover:active {
-
-    color:          #fff;
 
     background-image: -gtk-gradient (linear,
 				     left top,
@@ -51,12 +54,29 @@
                      to (shade (@bg_color, 0.70)));
 }
 
+.toolbar.button {
+    padding: 3;
+}
+
+.button.warning {
+    background-image: -gtk-gradient (linear,
+				     left top,
+				     left bottom,
+                     from (#e56453),
+                     to (#bb2332));
+
+    -unico-border-gradient: -gtk-gradient (linear,
+                     left top, left bottom,
+                     from (#dd3b27),
+                     to (#791235));
+}
+
 /*************************** 
 * Secondary Toolbar Button *
 ***************************/
 
 .secondary-toolbar.toolbar.button {
-        -GtkButton-inner-border:    0;
+        -GtkButton-inner-border:    -3;
         -unico-outer-stroke-style:      none;
 }
 

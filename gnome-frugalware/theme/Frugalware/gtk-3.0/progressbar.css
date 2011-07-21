@@ -3,7 +3,10 @@
  ****************/
 
 GtkProgressBar {
-padding:        0;
+    -GtkProgressBar-min-horizontal-bar-height: 14;
+    -GtkProgressBar-min-vertical-bar-width: 14;
+
+padding:        2;
 }
 
 GtkProgressBar.progressbar {
@@ -16,6 +19,8 @@ GtkProgressBar.progressbar {
 
     -unico-border-gradient: -gtk-gradient (linear,
                     left top, left bottom,
-                    from (shade (@bg_color, 0.60)),
-                    to (shade (@bg_color, 0.78)));
+                    from (shade (@base_color, 0.94)),
+                    to (shade (@base_color, 1.06)));
+
+    -unico-inner-stroke-color: alpha (#fff, 0.0);
 }

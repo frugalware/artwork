@@ -22,12 +22,9 @@
 .scrollbar.button {
     border-width:              0;
     background-color:         alpha (#000, 0.4);
-    -unico-inner-stroke-color:  none;
+    -unico-inner-stroke-color:  rgba (0, 0, 0, 0);
     -unico-outer-stroke-color:  alpha (#FFF, 0.4);
     border-radius:              10;
-}
-
-.scrollbar.button {
 }
 
 .scrollbar.slider:insensitive {

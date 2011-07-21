@@ -5,6 +5,11 @@
     color:                      shade (@bg_color, 0.55);
 }
 
+.sidebar {
+    -GtkTreeView-horizontal-separator:          6;
+    -GtkTreeView-vertical-separator:            3;
+}
+
 .sidebar.view:selected {
     background-color:         shade (@bg_color, 0.85);
 }
@@ -13,7 +18,9 @@
     background-color:         shade (@bg_color, 1.10);
 }
 
-GtkHCollapsablePaned {
+GtkHCollapsablePaned,
+SourceList.pane-separator {
+    engine: gtk;
     border-width:            0;
     -GtkPaned-handle-size:    2;
 }
@@ -25,6 +32,6 @@ GtkHCollapsablePaned.pane-separator:selected {
 				     left top,
 				     right top,
 				     from (shade (@bg_color, 1.30)),
-				     to (shade (@bg_color, 0.65)));
+				     to (shade (@bg_color, 0.55)));
     background-color: alpha(#fff, 0.0);
 }

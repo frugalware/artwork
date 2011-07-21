@@ -25,7 +25,7 @@
 @define-color error_color #cc0000;
 @define-color success_color #4e9a06;
 
-@define-color info_fg_color rgb (181, 171, 156);
+@define-color info_fg_color rgb (0, 136, 204);
 @define-color info_bg_color rgb (252, 252, 189);
 @define-color warning_fg_color rgb (173, 120, 41);
 @define-color warning_bg_color rgb (250, 173, 61);

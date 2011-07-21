@@ -6,7 +6,7 @@
     padding:        4;
 }
 
-.entry:focused {
+/*.entry:focused {
 
     -unico-border-gradient: -gtk-gradient (linear,
                     left top, left bottom,
@@ -23,6 +23,7 @@
                     from (alpha (@selected_bg_color, 0.15)),
                     to (shade (@selected_bg_color, 1.55)));
 }
+*/
 
 .entry.progressbar {
     background-color: @theme_selected_bg_color;
