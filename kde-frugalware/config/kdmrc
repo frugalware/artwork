@@ -30,7 +30,6 @@ Startup=/etc/kde/config/kdm/Xstartup
 [X-*-Greeter]
 AntiAliasing=true
 ColorScheme=Frugalware
-EchoMode=OneStar
 FaceDir=/usr/share/apps/kdm/pics/users
 #FaceSource=AdminOnly
 FailFont=DejaVu Sans,13,-1,5,75,0,0,0,0,0
@@ -55,7 +54,7 @@ Theme=/usr/share/apps/kdm/themes/Frugalware
 UseBackground=true
 UseTheme=true
 UserCompletion=false
-UserList=true
+UserList=false
 
 [X-:*-Core]
 AllowNullPasswd=false
