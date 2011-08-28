@@ -2,11 +2,11 @@
 static char *top[] = {
 /* columns rows colors chars-per-pixel */
 "22 22 7 1 ",
-"  c #000000",
+"  c black",
 ". c #010101",
-"X c #030303",
+"X c gray1",
 "o c #060606",
-"O c #0A0A0A",
+"O c gray4",
 "+ c #6F6F6F",
 "@ c None",
 /* pixels */

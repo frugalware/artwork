@@ -2,7 +2,7 @@
 static char *gnome_activity_journal[] = {
 /* columns rows colors chars-per-pixel */
 "32 32 144 2 ",
-"   c #000000",
+"   c black",
 ".  c #102F3B",
 "X  c #216276",
 "o  c #22667A",

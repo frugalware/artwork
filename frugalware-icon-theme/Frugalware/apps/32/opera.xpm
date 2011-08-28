@@ -2,7 +2,7 @@
 static char *opera[] = {
 /* columns rows colors chars-per-pixel */
 "32 32 146 2 ",
-"   c #000000",
+"   c black",
 ".  c #2C0303",
 "X  c #6B0606",
 "o  c #6B0A0A",

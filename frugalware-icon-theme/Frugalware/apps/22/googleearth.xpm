@@ -2,7 +2,7 @@
 static char *googleearth[] = {
 /* columns rows colors chars-per-pixel */
 "22 22 184 2 ",
-"   c #000000",
+"   c black",
 ".  c #100D19",
 "X  c #221D34",
 "o  c #182337",
@@ -184,7 +184,7 @@ static char *googleearth[] = {
 "]. c #EFF3F6",
 "[. c #F1F4F6",
 "{. c #F6F9FB",
-"}. c #FAFAFA",
+"}. c gray98",
 "|. c None",
 /* pixels */
 "|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.",

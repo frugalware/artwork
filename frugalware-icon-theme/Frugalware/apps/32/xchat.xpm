@@ -2,7 +2,7 @@
 static char *xchat[] = {
 /* columns rows colors chars-per-pixel */
 "32 32 133 2 ",
-"   c #000000",
+"   c black",
 ".  c #28390A",
 "X  c #597E17",
 "o  c #5B8015",

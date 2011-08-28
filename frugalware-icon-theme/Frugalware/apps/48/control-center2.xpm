@@ -1,5 +1,5 @@
 /* XPM */
-static char *control_center_[] = {
+static char *control_center2[] = {
 /* columns rows colors chars-per-pixel */
 "48 48 222 2 ",
 "   c #000000",
@@ -184,7 +184,7 @@ static char *control_center_[] = {
 "]. c #A9AEB5",
 "[. c #AFB0B0",
 "{. c #A7B1BE",
-"}. c #B3B3B3",
+"}. c gray70",
 "|. c #B2B7BE",
 " X c #B6B9BD",
 ".X c #BBBBBB",
@@ -215,14 +215,14 @@ static char *control_center_[] = {
 "8X c #B0C7E2",
 "9X c #B0C8E5",
 "0X c #C4C4C4",
-"qX c #CCCCCC",
+"qX c gray80",
 "wX c #CED2D8",
 "eX c #D5D5D5",
 "rX c #DCDCDC",
 "tX c #DFE0E2",
 "yX c #E3E3E3",
 "uX c #EBEBEB",
-"iX c #F2F2F2",
+"iX c gray95",
 "pX c None",
 /* pixels */
 "pXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpXpX",

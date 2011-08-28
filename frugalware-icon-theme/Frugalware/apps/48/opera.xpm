@@ -53,7 +53,7 @@ static char *opera[] = {
 "x  c #9B3A3A",
 "c  c #A32323",
 "v  c #AA2525",
-"b  c #A52A2A",
+"b  c brown",
 "n  c #AD2929",
 "m  c #B22323",
 "M  c #B92424",

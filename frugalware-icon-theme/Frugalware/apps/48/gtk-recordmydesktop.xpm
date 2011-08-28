@@ -2,7 +2,7 @@
 static char *gtk_recordmydesktop[] = {
 /* columns rows colors chars-per-pixel */
 "48 48 191 2 ",
-"   c #000000",
+"   c black",
 ".  c #060802",
 "X  c #525E15",
 "o  c #566216",
