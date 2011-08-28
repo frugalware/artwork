@@ -27,10 +27,8 @@ style "midori-sidebar-toolbar" {
 	bg[NORMAL]			= @bg_color
 
 	engine "murrine" {
-		contrast		= 0.0
-		toolbarstyle		= 1
 		lightborder_shade	= 1.0
-		gradient_shades     	= {1.0,1.0,1.0,1.0}
+		gradient_shades     = {1.0,1.0,1.0,1.0}
 	}
 }
 

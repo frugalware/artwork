@@ -3,9 +3,9 @@
  ************/
 GtkScale {
     border-width:               1;
-    -GtkScale-slider-length:     16;
-    -GtkRange-slider-width:     14;
-    -GtkRange-trough-border:    0;
+    -GtkScale-slider-length:     20;
+    -GtkRange-slider-width:     20;
+    -GtkRange-trough-border:    1;
 }
 
 GtkScale.slider {
@@ -74,11 +74,6 @@ GtkScale.progressbar {
 
 GtkScale.mark {
     background-color: shade (@bg_color, 0.56);
-}
-
-GtkFrame,
-GtkCalendar {
-    padding: 2;
 }
 
 .frame {

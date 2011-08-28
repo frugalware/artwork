@@ -3,12 +3,13 @@
 *********/
 
 .button {
+
     -GtkButton-child-displacement-x:             0;
     -GtkButton-child-displacement-y:             0;
     -GtkButton-default-border:                 0;
     -GtkButton-image-spacing:                    0;
     -GtkButton-inner-border:                    3;
-    -GtkButton-interior-focus:                  true; 
+    -GtkButton-interior-focus:                  true;
 
     background-image: -gtk-gradient (linear,
         left top,
@@ -54,8 +55,9 @@
                      to (shade (@bg_color, 0.70)));
 }
 
-.toolbar.button {
+.toolbar .button {
     padding: 3;
+	icon-shadow: none;
 }
 
 .button.warning {
@@ -75,13 +77,14 @@
 * Secondary Toolbar Button *
 ***************************/
 
-.secondary-toolbar.toolbar.button {
-        -GtkButton-inner-border:    -3;
-        -unico-outer-stroke-style:      none;
+.secondary-toolbar.toolbar .button {
+    -GtkButton-inner-border:    0;
+    padding:                    0;
+    -unico-outer-stroke-width:  0;
 }
 
-.secondary-toolbar.toolbar.button:active,
-.secondary-toolbar.toolbar.button:hover:active {
+.secondary-toolbar.toolbar .button:active,
+.secondary-toolbar.toolbar .button:hover:active {
 
         -unico-inner-stroke-gradient: -gtk-gradient (linear,
                     left top, left bottom,

@@ -1,7 +1,13 @@
 * {
     engine: unico;
+    
+    -GtkMenu-horizontal-padding: 0;
+    -GtkMenu-vertical-padding: 0;
+    -GtkWidget-wide-separators: true;
+    -GtkWidget-separator-width: 2;
+    -GtkWidget-separator-height: 2;
 
-    -unico-inner-stroke-color: rgba (0, 0, 0, 0);
+    -unico-inner-stroke-color:              rgba (0, 0, 0, 0);
     -unico-focus-border-color:             alpha (#fff, 0.0);
     -unico-focus-border-radius:              2;
     -unico-focus-fill-color:                alpha (#fff, 0.0);
@@ -60,25 +66,41 @@ PostlerMessages {
 .button:active,
 .button:hover:active,
 .button.warning,
+.menubar.menuitem:active,
+.menubar.menuitem:prelight,
 .menuitem:active,
 .menuitem:prelight,
-GtkSwitch.trough:active,
-TerminalScreen {
+GtkSwitch.trough:active {
     color: @selected_fg_color;
 }
 
 /* etched text */
-
+.button,
+.entry,
+.inline-toolbar.toolbar .button,
 *:insensitive,
-.secondary-toolbar {
+.secondary-toolbar,
+GtkSwitch {
     text-shadow: 0 1 alpha (#fff, 0.4);
+    icon-shadow: 0 1 #fff;
+}
+
+*:insensitive {
+    icon-shadow: none;
 }
 
 /* text shadow */
 
-.button:active {
-    text-shadow: 0 1 alpha (#000, 0.3);
+.button:active,
+.menubar.menuitem:active,
+.menubar.menuitem:prelight,
+.menuitem:active,
+.menuitem:prelight,
+GtkSwitch.trough:active {
+    text-shadow:   0 1 alpha (#000, 0.3);
+    icon-shadow:    0 1 alpha (#000, 0.3);
 }
+
 
 /*********
 * Border *
@@ -86,18 +108,20 @@ TerminalScreen {
 
 /* Borderless */
 
-.toolbar,
 .notebook.view {
-    border-width:                             0; 
+    border-width:                             0;
 }
 
+
 /* Border */
+
 .button,
 .check,
 .entry,
 .notebook,
 .notebook tab .button,
 .radio,
+.separator,
 GtkProgressBar.trough,
 GtkScale.trough,
 GtkSwitch,
@@ -106,7 +130,16 @@ GtkSwitch.trough,
 PostlerMessages.view row:selected {
     -unico-outer-stroke-style:               custom;
     border-width:                             1;
+	-unico-inner-stroke-width:					1;
+	-unico-outer-stroke-width:					1;
     border-style: solid;
+}
+
+/* No outer stroke */
+
+column-header .button,
+GtkSwitch.slider {     
+    -unico-outer-stroke-width: 0;  
 }
 
 /************
@@ -114,10 +147,11 @@ PostlerMessages.view row:selected {
 ************/
 
 /* Square */
+.inline-toolbar.toolbar,
+.inline-toolbar.toolbar .button,
 .pane-separator,
 .view,
-column-header .button,
-GtkScale.slider {
+column-header .button {
         border-radius:                              0;
 }
 
@@ -146,8 +180,10 @@ GtkScale.trough {
 
 /* Inner Higlight */
 .button,
+.inline-toolbar.toolbar,
 .menu.menuitem,
 .notebook,
+.toolbar,
 GtkProgressBar.progressbar,
 GtkSwitch,
 PostlerMessages.view row:selected {
@@ -160,6 +196,7 @@ PostlerMessages.view row:selected {
 .entry,
 .check,
 .radio,
+GtkComboBoxText:nth-child(last) .button,
 GtkProgressBar.trough,
 GtkSwitch.trough,
 .notebook tab .button {
@@ -181,6 +218,7 @@ GtkSwitch.trough,
 .check,
 .notebook tab .button,
 .radio,
+GtkComboBoxText:nth-child(last) .button,
 GtkProgressBar.trough,
 GtkScale.trough,
 GtkSwitch.trough {
@@ -194,8 +232,7 @@ GtkSwitch.trough {
 
 .button,
 .menu.menuitem,
-.notebook,
-GtkScale.slider {
+.notebook {
         -unico-outer-stroke-gradient:               -gtk-gradient (linear,
                                                     left top, left bottom,
                                                     from (alpha (#000, 0.00)),
@@ -210,7 +247,8 @@ GtkScale.slider {
 
 .check,
 .entry,
-.radio {
+.radio,
+GtkComboBoxText:nth-child(last) .button {
     background-image: -gtk-gradient (linear,
 			         left top,
 			         left bottom,
@@ -225,14 +263,12 @@ GtkScale.slider {
 }
 
 
-/* Shallow Trough */
+/* Insensitive Trough */
 
 .check:insensitive,
 .entry:insensitive,
 .radio:insensitive,
-GtkProgressBar.trough,
-GtkScale.trough,
-GtkSwitch.trough {
+GtkComboBoxText:nth-child(last) .button:insensitive {
     background-image: -gtk-gradient (linear,
 			         left top,
 			         left bottom,
@@ -244,6 +280,24 @@ GtkSwitch.trough {
                      left top, left bottom,
                      from (shade (@bg_color, 0.67)),
                      to (shade (@bg_color, 0.74)));
+}
+
+/* Shallow Trough */
+
+GtkProgressBar.trough,
+GtkScale.trough,
+GtkSwitch.trough {
+    background-image: -gtk-gradient (linear,
+			         left top,
+			         left bottom,
+			         from (alpha (#000, 0.18)),
+                     color-stop (0.20, alpha (#000, 0.14)),
+			         to (alpha (#000, 0.04)));
+
+    -unico-border-gradient: -gtk-gradient (linear,
+                     left top, left bottom,
+                     from (shade (@bg_color, 0.60)),
+                     to (shade (@bg_color, 0.70)));
 }
 
 .marlin-pathbar {
@@ -260,7 +314,8 @@ PostlerMessages {
 
 PostlerMessages.view row:selected {
 
-    -unico-outer-stroke-style: none;
+    border-width: 1 0 1 0;
+    -unico-outer-stroke-width: 0;
 
     color:#333;
 
@@ -275,8 +330,59 @@ PostlerMessages.view row:selected {
         to (shade (@base_color, 0.64)));
 }
 
+/**************
+ * ComboBoxes *
+ **************/
+
+GtkComboBox {
+    -GtkComboBox-arrow-scaling: 0.5;
+    -GtkComboBox-shadow-type: 2;
+}
+
+GtkComboBoxText .entry {
+	border-radius: 2 0 0 2;
+	border-width: 1 0 1 1;
+}
+
+GtkComboBoxText:nth-child(last) .button {
+	border-radius: 0 2 2 0;
+	border-width: 1 1 1 0;
+}
+
+/***********
+* Expander *
+***********/
+
+.expander {
+    color: @fg_color;
+}
+
+.expander row:selected,
+.expander row:selected:focused {
+    color: @selected_fg_color;
+}
+
+/*********
+* Slider *
+*********/
+
+GtkScale.slider {
+    background-image: url("assets/scale-slider.svg");
+}
 
 @import url("button.css");
+
+/************
+* Separator *
+************/
+
+.separator {
+    border-color: alpha (#000, 0.2);
+
+    -unico-border-gradient: none;
+    -unico-inner-stroke-color: alpha (#fff, 0.4);
+    -unico-inner-stroke-gradient: none;
+}
 
 /****************************************************************************************************
 ******************************************************* Redo this crap ******************************
@@ -328,16 +434,16 @@ PostlerMessages.view row:selected {
  *****************/
 
 .notebook {
-    background-color:   shade (@bg_color, 1.06);
+    background-color:       shade (@bg_color, 1.06);
 }
 
 .notebook tab {
-    background-color:   shade (@bg_color, 0.85);
-    border-radius: 4;
+    background-color:       shade (@bg_color, 0.85);
+    border-radius:            4;
 }
 
 .notebook tab:active {
-    background-color:   shade (@bg_color, 1.06);
+    background-color:       shade (@bg_color, 1.06);
 }
 
 .notebook tab .button,
@@ -362,9 +468,6 @@ PostlerMessages.view row:selected {
 .pane-separator,
 .pane-separator:prelight,
 .pane-separator:selected {
-    engine: gtk;
-
-    border-width:                             0;
     
     background-image: -gtk-gradient (linear,
 				     left top,
@@ -415,17 +518,13 @@ PostlerMessages.view row:selected {
 
 .secondary-toolbar.toolbar {
         -GtkToolbar-internal-padding:               1;
+        -unico-inner-stroke-width: 1 0 1 0;
 
         background-image: -gtk-gradient (linear,
 			     left top,
 			     left bottom,
-			     from (@bg_color),
-                                 color-stop (0.05, shade (@bg_color, 0.87)),
-                                 color-stop (0.93, shade (@bg_color, 0.80)),
-                                 color-stop (0.94, shade (@bg_color, 0.89)),
-                                 color-stop (0.95, shade (@bg_color, 0.89)),
-                                 color-stop (0.99, shade (@bg_color, 0.50)),
-			     to (shade (@bg_color, 0.50)));
+			     from (shade (@bg_color, 0.87)),
+			     to (shade (@bg_color, 0.80)));
 }
 
 /********
@@ -459,19 +558,11 @@ PostlerMessages.view row:selected {
 GtkSpinButton.button,
 GtkSpinButton.button:insensitive,
 GtkSpinButton.button:prelight,
-GtkSpinButton.button:active {
-}
+GtkSpinButton.button:active{
+    border-width:             0 0 0 0;
+    -unico-inner-stroke-width: 0 0 0 0;
+    -unico-outer-stroke-width: 0 0 0 0;
 
-/**************
- * ComboBoxes *
- **************/
-
-GtkComboBox {
-    -GtkComboBox-arrow-scaling: 0.5;
-    -GtkComboBox-shadow-type: 2;
-}
-
-GtkComboBox.button {
 }
 
 /*************************
@@ -585,7 +676,6 @@ GtkSwitch.trough:insensitive {
 }
 
 GtkSwitch.slider {     
-    -unico-outer-stroke-style:              none;  
 
     background-image: -gtk-gradient (linear,
                     left top,
@@ -648,7 +738,16 @@ GtkTreeView.separator {
 column-header {
 }
 
+column-header:nth-child(last) .button {
+    border-width: 0 0 1 0;
+}
+
 column-header .button {
+
+	padding: 1;
+
+	border-width: 0 1 1 0;
+
     -unico-outer-stroke-style:                  none;
     -GtkButton-inner-border:                    2;
 
@@ -688,28 +787,17 @@ row:insensitive {
 }
 
 row:selected:focused {
+    border-width: 1 0 1 0;
 }
 
 row:selected {
+    border-width: 1 0 1 0;
 }
 
 .cell {
 }
 
 .cell:selected {
-}
-
-.expander {
-}
-
-.expander:active {
-}
-
-.expander:prelight {
-}
-
-.expander row:selected,
-.expander row:selected:focused {
 }
 
 /* Calendars */
@@ -758,7 +846,6 @@ TerminalScreen {
 @import url("menu.css");
 @import url("progressbar.css");
 @import url("sidebar.css");
-@import url("separator.css");
 @import url("scale.css");
 @import url("scrollbar.css");
 @import url("toolbar.css");

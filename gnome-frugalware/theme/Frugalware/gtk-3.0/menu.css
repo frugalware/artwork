@@ -13,7 +13,7 @@
     -GtkMenuBar-internal-padding: 0;
 }
 
-/* remove the image from the prelight areas */
+/* remove the image from the prelight areas
 .menubar.menuitem:prelight {
     background-image: none;
     background-color: @theme_base_color;
@@ -24,6 +24,7 @@
     border-width: 1;
     border-color: @inactive_frame_color;
 }
+*/
 
 .menubar.menuitem {
     border-width: 1;
@@ -45,10 +46,6 @@
 } */
 
 .menu {
-    -GtkMenu-horizontal-padding: 0;
-    -GtkMenu-vertical-padding: 0;
-    -GtkWidget-wide-separators: 1;
-
 	background-image: none;
 	background-color: #383838;
 	border-width: 1;
@@ -60,6 +57,7 @@
 }
 
 .menu.menuitem {
+    padding: 2;
     -unico-menuitem-arrow-color: @menu_controls_color;
     /*font: bold;*/
 }
@@ -77,6 +75,8 @@
     color: alpha (#000, 0.40);
 }
 
+.menubar.menuitem:active,
+.menubar.menuitem:prelight,
 .menuitem:active,
 .menuitem:prelight {
     border-style: solid;
