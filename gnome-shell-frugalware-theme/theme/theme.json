@@ -1,0 +1,10 @@
+{ 
+   "shell-theme": {
+   "name": "Frugalware", 
+   "author": "Frugalware Artwork Team", 
+   "version": "1.6",
+   "type":   "Official",
+   "thumbnail": "preview.jpg", 
+   "url": "http://frugalware.org" 
+    }
+}

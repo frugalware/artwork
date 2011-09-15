@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -237,6 +237,15 @@
        x2="20.575808"
        y2="11.10189"
        gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3837"
+       id="linearGradient3851"
+       gradientUnits="userSpaceOnUse"
+       x1="19.333229"
+       y1="12.448705"
+       x2="-0.16664654"
+       y2="11.230158" />
   </defs>
   <g
      transform="matrix(0,-1.3488109,-1.3045236,0,14.04562,110.80162)"
@@ -251,14 +260,14 @@
            transform="matrix(1.2825038,0,0,1.3677992,-0.63443392,-3.1183187)">
           <g
              id="g3116"
-             transform="translate(0.27382778,0)">
+             transform="matrix(-1,0,0,1,19.371953,0)">
             <g
                id="g3797"
-               style="fill-opacity:1.0;fill:url(#linearGradient3849)">
+               style="fill:url(#linearGradient3849);fill-opacity:1">
               <path
                  d="M 12.372264,2.5215319 -0.98923407,11.058029 12.284467,19.682249 C 11.23785,17.67787 8.9834771,14.799459 10.427027,14.868476 l 9.221354,2.933223 C 17.645808,13.158221 16.835823,9.14558 20.087359,4.5775284 L 10.163635,7.335305 C 9.8359694,5.9174596 11.214947,4.3633016 12.372264,2.5215319 z"
                  id="path2624"
-                 style="fill:url(#linearGradient3849);fill-opacity:1.0;fill-rule:nonzero;stroke:url(#linearGradient3190);stroke-width:0.97689687999999997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible"
+                 style="fill:url(#linearGradient3851);fill-opacity:1;fill-rule:nonzero;stroke:url(#linearGradient3190);stroke-width:0.97689687999999997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible"
                  inkscape:connector-curvature="0"
                  sodipodi:nodetypes="cccccccc" />
             </g>

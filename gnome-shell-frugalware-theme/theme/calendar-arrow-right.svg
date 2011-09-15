@@ -7,10 +7,34 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    width="16"
    height="16"
-   id="svg2">
+   id="svg2"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="calendar-arrow-right.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="754"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="20.0625"
+     inkscape:cx="8"
+     inkscape:cy="8.5981308"
+     inkscape:window-x="0"
+     inkscape:window-y="22"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
   <defs
      id="defs4" />
   <metadata
@@ -21,48 +45,20 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     transform="matrix(0,0.11060285,-0.15008444,0,13.979411,2.5169153)"
-     id="g2990">
-    <g
-       transform="matrix(0,-1.1688867,1.637152,0,4.4441632,-33.154527)"
-       id="g3885"
-       style="font-size:111.1867981px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;opacity:0.07438019;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book">
-      <path
-         d="m -90.683501,56.091573 56.594081,-25.795337 0,-7.227142 -56.594081,-25.6841499 0,8.6725701 44.697093,20.5695578 -44.697093,20.791931 0,8.67257"
-         id="path3887"
-         style="fill:#000000;fill-opacity:1;stroke:none" />
-    </g>
-    <g
-       transform="matrix(0,-1.1205746,1.637152,0,5.0517581,-29.077217)"
-       id="g3881"
-       style="font-size:111.1867981px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;opacity:0.21487606;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book">
-      <path
-         d="m -90.683501,56.091573 56.594081,-25.795337 0,-7.227142 -56.594081,-25.6841499 0,8.6725701 44.697093,20.5695578 -44.697093,20.791931 0,8.67257"
-         id="path3883"
-         style="fill:#000000;fill-opacity:1;stroke:none" />
-    </g>
-    <g
-       transform="matrix(0,-1.0829985,1.5854036,0,6.4354204,-25.365892)"
-       id="g3877"
-       style="font-size:111.1867981px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;opacity:0.37190085;fill:#000000;fill-opacity:1;stroke:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book">
-      <path
-         d="m -90.683501,56.091573 56.594081,-25.795337 0,-7.227142 -56.594081,-25.6841499 0,8.6725701 44.697093,20.5695578 -44.697093,20.791931 0,8.67257"
-         id="path3879"
-         style="fill:#000000;fill-opacity:1;stroke:none" />
-    </g>
-    <g
-       transform="matrix(0,-1.0185824,1.4353332,0,9.9923451,-21.043402)"
-       id="text2923"
-       style="font-size:111.1867981px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#3c3c3c;fill-opacity:1;stroke:#2b2b2b;stroke-width:0.83448154;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:URW Gothic L;-inkscape-font-specification:URW Gothic L Book">
-      <path
-         d="m -90.683501,56.091573 56.594081,-25.795337 0,-7.227142 -56.594081,-25.6841499 0,8.6725701 44.697093,20.5695578 -44.697093,20.791931 0,8.67257"
-         id="path3085"
-         style="fill:#282828;fill-opacity:1;stroke:none" />
-    </g>
+     transform="matrix(-1,0,0,1,16.918101,-1036.4223)"
+     id="layer1"
+     style="fill:#e6e6e6">
+    <path
+       d="m 88.577311,340.6677 c -3.424796,-4.75402 -5.352143,-4.7006 -8.349096,0 0.885884,-3.06087 1.460611,-4.70621 4.057864,-7.5 2.305542,2.28634 3.152532,3.93168 4.291232,7.5 z"
+       transform="matrix(0,1.3621708,0.99186247,0,-325.48222,929.32667)"
+       id="path18028"
+       style="fill:#e6e6e6;fill-opacity:1;stroke:none;display:inline"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
   </g>
 </svg>
