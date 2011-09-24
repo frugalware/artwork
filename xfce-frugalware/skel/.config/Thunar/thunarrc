@@ -34,4 +34,5 @@ ShortcutsIconEmblems=TRUE
 ShortcutsIconSize=THUNAR_ICON_SIZE_SMALLER
 TreeIconEmblems=TRUE
 TreeIconSize=THUNAR_ICON_SIZE_SMALLEST
+MiscVolumeManagement=TRUE
 
