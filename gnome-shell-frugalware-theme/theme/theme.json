@@ -1,9 +1,9 @@
 { 
    "shell-theme": {
    "name": "Frugalware", 
-   "author": "Frugalware Artwork Team", 
-   "version": "1.6",
-   "type":   "Free Art",
+   "author": "Half-Left", 
+   "version": "1.6.1",
+   "type":   "custom",
    "thumbnail": "preview.jpg", 
    "url": "http://frugalware.org/" 
     }
