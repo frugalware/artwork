@@ -1,6 +1,0 @@
-#
-# Default helpers.rc for Xfce's Preferred Applications
-#
-
-FileManager=Thunar
-TerminalEmulator=Terminal
