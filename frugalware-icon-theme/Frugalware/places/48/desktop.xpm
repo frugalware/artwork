@@ -1,7 +1,7 @@
 /* XPM */
 static char *desktop[] = {
 /* columns rows colors chars-per-pixel */
-"48 48 247 2 ",
+"48 48 247 2",
 "   c #000000",
 ".  c #0A0A0A",
 "X  c #0F161F",
