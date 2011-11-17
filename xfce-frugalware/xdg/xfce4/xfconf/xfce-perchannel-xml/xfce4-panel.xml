@@ -3,10 +3,10 @@
 <channel name="xfce4-panel" version="1.0">
   <property name="panels" type="uint" value="1">
     <property name="panel-0" type="empty">
-      <property name="size" type="uint" value="28"/>
+      <property name="size" type="uint" value="22"/>
       <property name="length" type="uint" value="100"/>
-      <property name="locked" type="bool" value="true"/>
-      <property name="autohide" type="bool" value="false"/>
+      <property name="locked" type="empty"/>
+      <property name="autohide" type="empty"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="1"/>
         <value type="int" value="2"/>
@@ -24,17 +24,19 @@
         <value type="int" value="14"/>
       </property>
       <property name="horizontal" type="bool" value="true"/>
-      <property name="position" type="string" value="p=10;x=0;y=0"/>
+      <property name="position" type="string" value="p=6;x=0;y=0"/>
       <property name="leave-opacity" type="uint" value="100"/>
       <property name="enter-opacity" type="uint" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
     </property>
   </property>
   <property name="plugins" type="empty">
     <property name="plugin-1" type="string" value="applicationsmenu">
       <property name="show-button-title" type="bool" value="true"/>
       <property name="button-icon" type="string" value="/usr/share/pixmaps/xfce4-Frugalware.png"/>
-      <property name="button-title" type="string" value="openSUSE"/>
+      <property name="button-title" type="string" value="Frugalware"/>
       <property name="custom-menu" type="bool" value="false"/>
+      <property name="custom-menu-file" type="string" value="/etc/xdg/menus/xfce-applications.menu"/>
     </property>
     <property name="plugin-2" type="string" value="separator"/>
     <property name="plugin-3" type="string" value="launcher">
