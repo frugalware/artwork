@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-  <name>Frugalware</name>
-  <author>Shimmer-project</author>
+  <name>elementary</name>
+  <author>elementart Art Team (modified by ochosi to work with Greybird gtk)</author>
   <copyright>GPL</copyright>
   <date>November 2009 (modified July 2011)</date>
   <description>A pleasant theme built to adapt to many color schemes as well as be optimal for both high and low resolution displays.</description>
