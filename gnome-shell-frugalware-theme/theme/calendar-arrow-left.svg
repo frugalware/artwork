@@ -26,12 +26,13 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0,-1036.3622)"
-     id="layer1">
+     transform="matrix(-1,0,0,1,16.063069,-1036.3622)"
+     id="layer1"
+     style="fill:#373737;fill-opacity:1;stroke:none">
     <path
        d="M 88.830127,340 80.169873,340 84.5,332.5 z"
-       transform="matrix(0,1.3621708,0.99186247,0,-325.48222,929.32667)"
+       transform="matrix(0,1.3621708,-0.99186247,0,341.54529,929.32667)"
        id="path18028"
-       style="fill:#fafafa;fill-opacity:1;stroke:none;display:inline" />
+       style="fill:#373737;fill-opacity:1;stroke:none;display:inline" />
   </g>
 </svg>
