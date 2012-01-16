@@ -1,0 +1,104 @@
+/* Panel */
+
+#panel {
+    color: #fff;
+	background-color: rgba(0,0,0,0.4);
+	box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4);
+	border: 1px solid rgba(255,255,255,0.2);
+	border-top: none;
+	border-left: none;
+	border-right: none;
+    font-size: 10pt;
+    font-weight: bold;
+    height: 1.86em;
+}
+
+#panelLeft, #panelCenter, #panelRight {
+    spacing: 0px;
+}
+
+#appMenu {
+    spacing: 4px;
+}
+
+.panel-button #appMenuIcon {
+    app-icon-bottom-clip: 1px;
+}
+
+.panel-button:active #appMenuIcon,
+.panel-button:checked #appMenuIcon,
+.panel-button:focus #appMenuIcon {
+    app-icon-bottom-clip: 1px;
+}
+
+.app-menu-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.panel-button {
+    -natural-hpadding: 12px;
+    -minimum-hpadding: 6px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: black 0px 1px 1px;
+}
+
+.panel-button > .system-status-icon {
+    icon-shadow: black 0px 1px 1px;
+}
+
+.panel-button:hover,
+.panel-button:active,
+.panel-button:overview,
+.panel-button:focus {
+    background-gradient-direction: vertical;
+	background-gradient-start: rgba(255,255,255,0.2);
+	background-gradient-end: rgba(255,255,255,0.1);
+	box-shadow: inset 0px 0px 2px rgba(255,255,255,0.2);
+}
+
+.panel-menu {
+    -boxpointer-gap: 3px;
+}
+
+#panelUserMenu {
+    spacing: 4px;
+}
+
+.status-chooser {
+    spacing: .5em;
+    padding: .5em 1.5em;
+}
+
+.status-chooser .popup-menu-item,
+.status-chooser-combo .popup-menu-item {
+    padding: .45em;
+}
+
+.status-chooser-user-icon {
+    border-radius: 3px;
+    width: 64px;
+    height: 64px;
+    border: none;
+}
+
+.status-chooser-user-name {
+    font-size: 11pt;
+    font-weight: bold;
+    min-width: 10em;
+}
+
+.status-chooser-combo {
+    font-size: 10pt;
+    border-radius: 3px;
+}
+
+.status-chooser-status-item,
+.status-chooser-combo .popup-combobox-item {
+    spacing: 5px;
+}
+
+.system-status-icon {
+    icon-size: 1.14em;
+}

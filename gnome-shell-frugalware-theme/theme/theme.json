@@ -1,10 +1,10 @@
 { 
    "shell-theme": {
    "name": "Frugalware", 
-   "author": "Half-Left", 
-   "version": "1.6.1",
+   "author": "", 
+   "version": "1.6",
    "type":   "custom",
-   "thumbnail": "preview.jpg", 
+   "thumbnail": "", 
    "url": "http://frugalware.org/" 
     }
 }

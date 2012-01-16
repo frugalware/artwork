@@ -1,0 +1,67 @@
+/* Magnifier */
+
+.magnifier-zoom-region {
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+.magnifier-zoom-region.full-screen {
+    border-width: 0px;
+}
+
+/* On-screen Keyboard */
+
+#keyboard {
+    background: rgba(0,0,0,0.85);
+}
+
+.keyboard-layout {
+    spacing: 10px;
+    padding: 10px;
+}
+
+.keyboard-row {
+    spacing: 15px;
+}
+
+.keyboard-key {
+    min-height: 30px;
+    min-width: 30px;
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255,255,255,0.3);
+    background-gradient-end: rgba(255,255,255,0.1);
+    box-shadow: inset 0px 0px 2px rgba(255,255,255,0.3);
+    font-size: 14pt;
+    font-weight: bold;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.2);
+    color: white;
+}
+
+.keyboard-key:grayed {
+    color: #808080;
+    border-color: #808080;
+}
+
+.keyboard-key:hover {
+    background-gradient-start: rgba(255,255,255,0.4);
+    box-shadow: inset 0px 0px 2px rgba(255,255,255,0.4);
+}
+
+.keyboard-key:checked,
+.keyboard-key:active {
+    background-gradient-start: rgba(255,255,255,0.2);
+    background-gradient-end: rgba(255,255,255,0.3);
+    box-shadow: inset 0px 0px 2px rgba(255,255,255,0.3);
+}
+
+.keyboard-subkeys {
+    color: white;
+    padding: 10px;
+    -arrow-border-radius: 5px;
+    -arrow-background-color: rgba(0,0,0,0.8);
+    -arrow-border-width: 0px;
+    -arrow-border-color: white;
+    -arrow-base: 18px;
+    -arrow-rise: 10px;
+    -boxpointer-gap: 3px;
+}

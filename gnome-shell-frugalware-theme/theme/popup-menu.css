@@ -1,0 +1,154 @@
+/* PopupMenu */
+
+.popup-menu-boxpointer {
+	-arrow-background-color: rgba(0,0,0,0.85);
+	-arrow-border-radius: 5px;
+    -arrow-base: 18px;
+    -arrow-rise: 10px;
+    -arrow-border-width: 0px;
+}
+
+.popup-menu {
+    color: #fff;
+    font-size: 10pt;
+    min-width: 120px;
+}
+
+.popup-submenu {
+    color: #fff;
+}
+
+.popup-combo-menu {
+    color: #fff;
+    padding: 1px;
+    border-radius: 3px;
+    background-gradient-direction: vertical;
+	background-gradient-start: rgba(0,0,0,0.8);
+	background-gradient-end: rgba(0,0,0,0.8);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* The remaining popup-menu sizing is all done in ems, so that if you
+ * override .popup-menu.font-size, everything else will scale with it.
+ */
+.popup-menu-content {
+    padding: .5em 1px;
+}
+
+.popup-menu-item {
+    padding: .45em 1.5em;
+    spacing: 1em;
+    border-radius: 0px;
+}
+
+.popup-menu-item:active {
+    background-gradient-direction: vertical;
+	background-gradient-start: rgba(255,255,255,0.3);
+	background-gradient-end: rgba(255,255,255,0.1);
+	box-shadow: inset 0px 0px 2px rgba(255,255,255,0.3);
+}
+
+.popup-menu-item:insensitive {
+    color: #ccc;
+}
+
+.popup-submenu-menu-item,
+.popup-submenu-menu-item:active {
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: inset 0px 0px 0px rgba(255,255,255,0.3);
+	border: .45em solid transparent;
+	border-left: none;
+	border-right: none;
+}
+
+.popup-combo-menu .popup-menu-item {
+    padding: .45em;
+}
+
+.popup-combobox-item {
+    spacing: 1em;
+}
+
+.popup-separator-menu-item {
+    -gradient-height: 1px;
+    -gradient-start: rgba(0,0,0,0);
+    -gradient-end: rgba(255,255,255,0.3);
+    -margin-horizontal: 0em;
+    height: 1px;
+}
+
+.popup-alternating-menu-item:alternate {
+    font-weight: bold;
+}
+
+.popup-slider-menu-item {
+    height: 1em;
+    min-width: 15em;
+    -slider-height: 0.3em;
+    -slider-border-width: 1px;
+    -slider-background-color: transparent;
+    -slider-border-color: rgba(255,255,255,0.3);
+    -slider-active-background-color: rgba(255,255,255,0.3);
+    -slider-active-border-color: rgba(255,255,255,0.3);
+    -slider-handle-radius: 6px;
+}
+
+.popup-device-menu-item {
+    spacing: 1em;
+}
+
+.popup-inactive-menu-item {
+    font-weight: normal;
+    color: #ccc;
+}
+
+.popup-subtitle-menu-item {
+    font-weight: normal;
+}
+
+.popup-menu-icon {
+    icon-size: 1.14em;
+}
+
+/* Switches (to be used in menus) */
+
+.toggle-switch {
+    width: 65px;
+    height: 22px;
+}
+
+.toggle-switch-us {
+    background-image: url("img/toggle-off-us.svg");
+}
+
+.popup-menu-item:hover .toggle-switch-us {
+    background-image: url("img/toggle-off-us-hover.svg");
+}
+
+.toggle-switch-us:checked {
+    background-image: url("img/toggle-on-us.svg");
+}
+
+.popup-menu-item:hover .toggle-switch-us:checked {
+    background-image: url("img/toggle-on-us-hover.svg");
+}
+
+.toggle-switch-intl {
+    background-image: url("img/toggle-off-intl.svg");
+}
+
+.popup-menu-item:hover .toggle-switch-intl {
+    background-image: url("img/toggle-off-intl-hover.svg");
+}
+
+.toggle-switch-intl:checked {
+    background-image: url("img/toggle-on-intl.svg");
+}
+
+.popup-menu-item:hover .toggle-switch-intl:checked {
+    background-image: url("img/toggle-on-intl-hover.svg");
+}
+
+.nm-menu-item-icons {
+    spacing: .5em;
+}
