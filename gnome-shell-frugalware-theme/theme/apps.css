@@ -1,0 +1,197 @@
+/* Apps */
+
+.icon-grid {
+    spacing: 30px;
+    -shell-grid-item-size: 100px;
+}
+
+.contact-grid {
+    spacing: 36px;
+    -shell-grid-item-size: 272px; /* 2 * -shell-grid-item-size + spacing */
+}
+
+.icon-grid .overview-icon {
+    icon-size: 64px;
+}
+
+.all-app {
+    padding: 2px 16px 2px 16px;
+    spacing: 60px;
+    font-size: 8pt;
+}
+
+.all-app:rtl {
+    padding-right: 2px;
+    padding-left: 16px;
+}
+
+/*.all-app .icon-grid {*/
+/*    padding: 15px 10px;*/
+/*}*/
+
+.all-app .overview-icon {
+    icon-size: 64px;
+        transition-duration: 300;
+}
+
+
+.dash-item-container > .app-well-app {
+    padding: 3px 3px;
+}
+
+.remove-favorite-icon {
+    color: #E6E6E6;
+    icon-shadow: #000 0px -1px 0px;
+}
+
+.remove-favorite-icon:hover {
+    color: #191919;
+    icon-shadow: rgba(255,255,255,0.2) 0px 1px 0px;
+}
+
+.app-well-app > .overview-icon,
+.remove-favorite > .overview-icon,
+.search-result-content > .overview-icon {
+    color: rgba(255,255,255,1.0);
+    font-size: 8pt;
+    padding: 1px;
+    text-align: center;
+    spacing: 10px;
+    padding: 1px 7px;
+}
+
+.app-well-app.running > .overview-icon {
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255,255,255,0);
+    background-gradient-end: rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.9);
+    -st-shadow: 0px -1px 5px 0px rgba(0,0,0,0.9);
+    border-radius: 5px;
+}
+
+.contact:selected,
+.app-well-app:selected > .overview-icon,
+.search-result-content:selected > .overview-icon {
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255,255,255,0);
+    background-gradient-end: rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.9);
+    border-radius: 5px;
+}
+
+.app-well-app:hover > .overview-icon,
+.remove-favorite:hover > .overview-icon,
+.search-result-content:hover > .overview-icon {
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 5px;
+}
+
+.contact:focus,
+.app-well-app:focus > .overview-icon,
+.search-result-content:focus > .overview-icon {
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255,255,255,0.1);
+    background-gradient-end: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    box-shadow: inset 0 2px 3px 0 rgba(0,0,0,0.4);
+    border: 1px 0 0 0 rgba(255,255,255,0.6);
+}
+
+.app-well-menu {
+    font-size: 8pt;
+}
+
+/*This section controls the app categories*/
+
+.app-filter {
+    color: #fff;
+    background-color: rgba(0,0,0,0.8);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 0px;
+    border-top: 1px solid rgba(255,255,255,0);
+    border-bottom: 1px solid rgba(255,255,255,0);
+    font-size: 10pt;
+    font-weight: bold;
+    height: 20px;
+    width: 120px;
+    padding: 3px 0px 3px 15px;
+}
+
+.app-filter:first-child{
+    border-radius: 5px 5px 0 0;
+}
+
+.app-filter:last-child{
+    border-radius: 0 0 5px 5px ;
+}
+
+.app-filter:hover {
+    color: #fff;
+    border: 1px  rgba(255,255,255,0.5);
+    background-color: #3D95E7;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4);
+    text-shadow: rgba(0,0,0,0.4) 0px 1px 0px;
+    padding: 4px 0px 4px 15px;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.app-filter:hover:first-child{
+    color: #fff;
+    border: 1px  rgba(255,255,255,0.5);
+    background-color: #3D95E7;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4);
+    text-shadow: rgba(0,0,0,0.4) 0px 1px 0px;
+    padding: 4px 0px 4px 15px;
+    border-top: 0;
+    border-bottom: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.app-filter:hover:last-child{
+    color: #fff;
+    border: 1px  rgba(255,255,255,0.5);
+    background-color: #3D95E7;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4);
+    text-shadow: rgba(0,0,0,0.4) 0px 1px 0px;
+    padding: 4px 0px 4px 15px;
+    border-top: 0;
+    border-bottom: 0;
+    border-radius: 0 0 5px 5px ;
+}
+
+.app-filter:selected {
+    color: #fff;
+    border: 1px  rgba(255,255,255,0.5);
+    background-color: #3D95E7;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4);
+    text-shadow: rgba(0,0,0,0.4) 0px 1px 0px;
+    padding: 4px 0px 4px 15px;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.app-filter:selected:first-child{
+    color: #fff;
+    border: 1px  rgba(255,255,255,0.5);
+    background-color: #3D95E7;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4);
+    text-shadow: rgba(0,0,0,0.4) 0px 1px 0px;
+    padding: 4px 0px 4px 15px;
+    border-top: 0;
+    border-bottom: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.app-filter:selected:last-child{
+    color: #fff;
+    border: 1px  rgba(255,255,255,0.5);
+    background-color: #3D95E7;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,0.4);
+    text-shadow: rgba(0,0,0,0.4) 0px 1px 0px;
+    padding: 4px 0px 4px 15px;
+    border-top: 0;
+    border-bottom: 0;
+    border-radius: 0 0 5px 5px ;
+}
+/*End right categories*/

@@ -1,0 +1,69 @@
+
+/*Set the default font*/
+stage {
+    font-family: droidsans, cantarell, sans-serif;
+}
+
+.shell-link {
+    color: #000;
+    text-decoration: underline;
+}
+
+.shell-link:hover {
+    color: #565656;
+}
+
+.label-shadow {
+    color: rgba(0,0,0,0);
+}
+
+StScrollBar {
+  padding: 2px 2px 2px 15px;
+}
+
+StScrollView.vfade {
+  -st-vfade-offset: 60px;
+}
+
+StScrollView StScrollBar {
+  min-width: 10px;
+  min-height: 10px;
+}
+
+StScrollBar StBin#trough {
+	background: none;
+}
+
+StScrollBar StButton#vhandle,
+StScrollBar StButton#hhandle {
+    transition-duration: 500;
+    border-image: url('img/scrollbar-handle.svg') 5 5 5 5 stretch;
+}
+
+StScrollBar StButton#hhandle:hover,
+StScrollBar StButton#vhandle:hover {
+    border-image: none;
+	background: rgba(255,255,255,0.8);
+    border-radius: 8px;
+
+}
+
+StScrollBar StButton#hhandle:active,
+StScrollBar StButton#vhandle:active{
+	background: rgba(255,255,255,0.7);
+}
+
+
+StTooltip StLabel { /*Controls the tooltips. Oh really, Einstein!*/
+    border-radius: 4px;
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255,255,255,0.9);
+    background-gradient-end: rgba(255,255,255,0.8);
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow:  inset 0px -1px 0px 0px rgba(255,255,255,0.9);
+    color: rgba(0,0,0,0.8);
+    padding: 4px;
+    font-size: 8.5pt;
+    font-weight: bold;
+    text-align: center;
+}

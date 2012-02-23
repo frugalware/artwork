@@ -1,34 +1,91 @@
-/* Frieze theme, version 1.1
- *   Copyright 2011, Nuxio
- *
- * Portions adapted from Fedora 16 default theme
- *   Copyright 2009, Red Hat, Inc.
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms and conditions of the GNU Lesser General Public License,
- * version 2.1, as published by the Free Software Foundation.
- *
- * This program is distributed in the hope it will be useful, but WITHOUT ANY
- * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
- * more details.
- *
- * You should have received a copy of the GNU Lesser General Public License
- * along with this program; if not, write to the Free Software Foundation,
- * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
- */
-
-/* Importing default theme files */
-@import url("general.css");
+@import url("app-switcher.css");
+@import url("apps.css");
+@import url("buttons.css");
+@import url("calendar.css");
+@import url("dash.css");
+@import url("end-session.css");
+@import url("gdm.css");
+@import url("initial.css");
+@import url("keyboard.css");
+@import url("lg.css");
+@import url("magnifier.css");
+@import url("message-tray.css");
+@import url("modal.css");
+@import url("mount.css");
+@import url("overview.css");
 @import url("popup-menu.css");
 @import url("panel.css");
-@import url("activities.css");
-@import url("looking-glass.css");
-@import url("calendar.css");
-@import url("message-tray.css");
-@import url("switchers.css");
-@import url("dialogs.css");
-@import url("universal-access.css");
+@import url("polkit.css");
+@import url("run.css");
+@import url("ws-switcher.css");
+@import url("message-notifier.css");
+@import url("contacts.css");
 
-/* Importing customization file */
-@import url("customization.css");
+
+/*Extensions' Fixes*/
+
+/*Weather*/
+
+ .weather-current-summarybox {
+    padding-top: 15px;
+}
+
+.weather-current-summary {
+    font-size: 25px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding: 5px 20px 0 20px;
+}
+
+.weather-current-databox {
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.weather-current-icon {
+  	padding: 15px 20px 15px 35px;
+    width: 50px;
+    height: 50px;
+}
+
+.weather-current-iconbox {
+    padding: 20px;
+}
+
+.weather-icon {
+	padding-right: 2px; /* Remove this line if you use a text and an icon*/
+    text-shadow: rgba(0,0,0,0.3) 0px 1px 0px;
+}
+
+.weather-icon-rtl {
+	padding-left: 2px;
+}
+
+.weather-current-databox-captions {
+    text-align: right;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: rgba(255,255,255,0.7);
+}
+
+ .weather-forecast-icon {
+	  padding: 15px 15px 15px 30px;
+	  color: rgba(255,255,255,0.7);
+}
+
+ .weather-forecast-databox {
+	  padding: 15px 30px 15px 0;
+	  color: rgba(255,255,255,0.7);
+}
+
+ .weather-forecast-day {
+    color: rgba(255,255,255,1);
+}
+
+
+/*Smart Overview*/
+
+.window-caption {
+    color: rgba(255,255,255,0.95); /*Getting rid of the red-text bug*/
+    -shell-caption-overlap: 10px;
+}

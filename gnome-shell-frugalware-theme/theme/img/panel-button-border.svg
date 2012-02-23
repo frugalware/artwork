@@ -9,38 +9,40 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="16"
-   height="16"
+   width="21"
+   height="10"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.1 r9760"
-   sodipodi:docname="calendar-arrow-left.svg">
+   sodipodi:docname="panel-button-border.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#000000"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="10"
-     inkscape:cx="-20.55"
-     inkscape:cy="4.5558239"
+     inkscape:zoom="44.8"
+     inkscape:cx="8.6594891"
+     inkscape:cy="5.7029946"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     borderlayer="true"
-     inkscape:showpageshadow="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="968"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1440"
+     inkscape:window-height="843"
      inkscape:window-x="0"
      inkscape:window-y="26"
-     inkscape:window-maximized="1">
+     inkscape:window-maximized="1"
+     guidetolerance="10000"
+     objecttolerance="10000">
     <inkscape:grid
        type="xygrid"
-       id="grid17403"
-       empspacing="5"
+       id="grid3792"
+       empspacing="10"
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true" />
@@ -53,34 +55,20 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-1036.3622)">
+     id="layer1">
     <rect
-       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       id="rect6229"
-       width="9.5859642"
-       height="2.45"
-       x="-750.18335"
-       y="734.04559"
-       transform="matrix(-0.70710678,-0.70710678,-0.70710678,0.70710678,0,0)"
-       rx="0.29898417"
-       ry="0.29898417" />
-    <rect
-       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       id="rect6229-1"
-       width="9.5859642"
-       height="2.45"
-       x="726.83893"
-       y="740.52667"
-       transform="matrix(-0.70710678,0.70710678,0.70710678,0.70710678,0,0)"
-       rx="0.29898417"
-       ry="0.29898417" />
+       style="opacity:0.8;fill:#ffffff;fill-opacity:1;stroke-width:0.43599999;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect3796"
+       width="3"
+       height="2"
+       x="9"
+       y="8" />
   </g>
 </svg>
