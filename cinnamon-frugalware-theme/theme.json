@@ -1,0 +1,10 @@
+{ 
+   "cinnamon-theme": {
+   "name": "Frugalware",
+   "author": "Reda Lazri(rAX)",
+   "version": "1.7",
+   "type":   "custom",
+   "thumbnail": "thumbnail.png",
+   "url": "http://frugalware.org"
+    }
+}
