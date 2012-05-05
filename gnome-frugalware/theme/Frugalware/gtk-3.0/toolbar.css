@@ -62,15 +62,47 @@
     border-color: shade (@bg_color, 0.50);
 }
 
+.secondary-toolbar.toolbar:backdrop {
+
+    background-image: -gtk-gradient (linear,
+				     left top,
+				     left bottom,
+				     from (shade (@bg_color, 0.96)),
+				     to (shade (@bg_color, 0.86)));
+				     
+    border-color: shade (@bg_color, 0.60);
+}
+
+
 /******************
 * Bottom Toolbars *
 ******************/
 
 .bottom-toolbar.toolbar {
-    padding: 12px;
-    
-    border-width: 0;
-    -unico-inner-stroke-width: 0;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    -unico-inner-stroke-width: 1px;
+
+    border-color: shade (@bg_color, 0.66);
+    background-image: -gtk-gradient (linear,
+				     left top,
+				     left bottom,
+				     from (@bg_color),
+				     to (shade (@bg_color, 0.88)));
+}
+
+.bottom-toolbar.toolbar:backdrop {
+    border-color: shade (@bg_color, 0.82);
+    background-image: -gtk-gradient (linear,
+				     left top,
+				     left bottom,
+				     from (shade (@bg_color, 1.06)),
+				     to (shade (@bg_color, 1.02)));
+}
+
+.bottom-toolbar.toolbar .button {
+    padding: 1px 3px 1px 3px;
 }
 
 
@@ -121,9 +153,6 @@
 
 .inline-toolbar.toolbar .button *:insensitive,
 .inline-toolbar.toolbar .button:insensitive {
-
-    color: #888;
-
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@base_color, 0.86)),
                                      to (shade (@base_color, 0.92)));

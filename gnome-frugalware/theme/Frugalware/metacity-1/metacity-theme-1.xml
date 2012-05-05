@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-  <name>elementary</name>
-  <author>elementart Design Team</author>
-  <copyright>elementary</copyright>
-  <date>2009-2012</date>
-  <description>A pleasant theme built to adapt to many color schemes as well as be optimal for both high and low resolution displays.</description>
+    <name>elementary</name>
+    <author>elementart Design Team</author>
+    <copyright>elementary</copyright>
+    <date>2009-2012</date>
+    <description>A pleasant theme built to adapt to many color schemes as well as be optimal for both high and low resolution displays.</description>
 </info>
 
 <!-- ::: GEOMETRY ::: -->
@@ -23,13 +23,11 @@
 
 <frame_geometry name="shaded" parent="normal" rounded_top_left="true" rounded_top_right="true" rounded_bottom_left="false" rounded_bottom_right="false"/>
 
-<frame_geometry name="normal_maximized" parent="normal" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false">
+<frame_geometry name="normal_maximized" parent="normal" rounded_top_left="false" rounded_top_right="false">
 	<!-- strip frame spacing off the normal geometry when maximised -->
 	<distance name="left_width" value="0"/>
 	<distance name="right_width" value="0"/>
 	<distance name="bottom_height" value="0"/>
-	<distance name="left_titlebar_edge" value="6"/>
-	<distance name="right_titlebar_edge" value="6"/>
 </frame_geometry>
 
 <frame_geometry name="utility" title_scale="small" rounded_top_left="true" rounded_top_right="true" rounded_bottom_left="false" rounded_bottom_right="false">
@@ -105,18 +103,18 @@
 <!-- ::: TITLEBAR ::: -->
 
 <draw_ops name="titlebar_gradient">
-	<gradient type="vertical" x="0" y="0" width="width" height="21">
-		<color value="shade/gtk:bg[NORMAL]/1.08"/>
+	<gradient type="vertical" x="0" y="0" width="width" height="19">
+		<color value="shade/gtk:bg[NORMAL]/1.04"/>
 		<color value="shade/gtk:bg[NORMAL]/1.0"/>
 	</gradient>
 </draw_ops>
 
 <draw_ops name="titlebar_gradient_unfocused">
-	<gradient type="vertical" x="0" y="0" width="width" height="21">
-		<color value="shade/gtk:bg[NORMAL]/1.12"/>
+	<gradient type="vertical" x="0" y="0" width="width" height="19">
+		<color value="shade/gtk:bg[NORMAL]/1.10"/>
 		<color value="shade/gtk:bg[NORMAL]/1.06"/>
 	</gradient>
-	<gradient type="vertical" x="0" y="21" width="width" height="height">
+	<gradient type="vertical" x="0" y="19" width="width" height="height">
 		<color value="shade/gtk:bg[NORMAL]/1.06"/>
 		<color value="shade/gtk:bg[NORMAL]/1.06"/>
 	</gradient>

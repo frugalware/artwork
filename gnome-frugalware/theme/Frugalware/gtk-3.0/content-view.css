@@ -15,8 +15,25 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 **/
 
-.content-view {
+.content-view,
+.content-view GtkViewport {
     background-color: @base_color;
+}
+
+.content-view-window {
+    background-image: -gtk-gradient (linear,
+                    left top,
+                    left bottom,
+                    from (#f8f8f8),
+                    color-stop (0.8, #f8f8f8),
+                    to (#f0f0f0));
+    
+    border-radius: 6px;
+    
+    border-width: 1px;
+    border-style: solid;
+    border-color: alpha (#000, 0.25);
+
 }
 
 .content-view .entry {
@@ -59,6 +76,9 @@
     -unico-outer-stroke-width: 1;
     -unico-inner-stroke-width: 1;
 
+    color: @text_color;
+    text-shadow: 0 1 alpha (#fff, 0.60);
+
     border-style: solid;
     border-radius: 2.5px;
 
@@ -70,14 +90,14 @@
                      left top, left bottom,
                      from (alpha (#fff, 0.00)),
                      color-stop (0.80, alpha (#fff, 0.00)),
-                     to (alpha (#fff, 0.30)));
+                     to (alpha (#fff, 0.60)));
 
     -unico-inner-stroke-gradient: -gtk-gradient (linear,
                      left bottom, left top,
-                     from (alpha (#fff, 0.20)),
-                     color-stop (0.20, alpha (#fff, 0.05)),
-                     color-stop (0.80, alpha (#fff, 0.05)),
-                     to (alpha (#fff, 0.50)));
+                     from (alpha (#fff, 0.40)),
+                     color-stop (0.20, alpha (#fff, 0.10)),
+                     color-stop (0.80, alpha (#fff, 0.10)),
+                     to (alpha (#fff, 1.00)));
 
 
     -unico-border-gradient: -gtk-gradient (linear,
@@ -100,12 +120,6 @@
                      from (shade (@base_color, 0.74)),
                      to (shade (@base_color, 0.74)));
 
-    -unico-outer-stroke-gradient: -gtk-gradient (linear,
-                     left top, left bottom,
-                     from (alpha (#fff, 0.00)),
-                     color-stop (0.80, alpha (#fff, 0.00)),
-                     to (alpha (#fff, 0.30)));
-
     -unico-inner-stroke-gradient: -gtk-gradient (linear,
                     left top, left bottom,
                     from (alpha (#000, 0.07)),
@@ -115,5 +129,27 @@
 .content-view .button:insensitive {
     background-image: none;
     background-color: alpha (#fff, 0.0);
+}
+
+.content-view .help_button * {
+    color: @text_color;
+}   
+
+.content-view .toolbar {
+    -GtkWidget-window-dragging: true;
+    
+    padding: 1px;
+    
+    border-style: solid;
+	border-width: 0 0 1px 0;
+	-unico-inner-stroke-width: 0 0 1px 0;
+
+    border-color: alpha (#000, 0.05);	
+    background-image: -gtk-gradient (linear,
+				     left top,
+				     left bottom,
+				     from (alpha (#000, 0.10)),
+				     to (alpha (#000, 0.03)));
+
 }
 

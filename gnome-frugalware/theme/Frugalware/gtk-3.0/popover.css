@@ -2,22 +2,28 @@ GraniteWidgetsPopOver {
 
     -GraniteWidgetsPopOver-arrow-width: 24;
     -GraniteWidgetsPopOver-arrow-height: 12;
-    -GraniteWidgetsPopOver-border-radius: 6;
+    -GraniteWidgetsPopOver-border-radius: 7px;
     -GraniteWidgetsPopOver-border-width: 1;
     -GraniteWidgetsPopOver-shadow-size: 18;
     
     border-style: solid;
-    border-color: shade (@bg_color, 0.50);
-    background-color: #f8f8f8;
+    border-color: alpha (#000, 0.40);
     margin: 0;
 }
 
-GraniteWidgetsPopOver * {
-    background-color: #f8f8f8;
+.popover_bg {
+    background-color: @transparent;
+    background-image: -gtk-gradient (linear,
+			         left top,
+			         left bottom,
+			         from (alpha (#f9f9f9, 0.97)),
+                     color-stop (0.80, alpha (#f9f9f9, 0.97)),
+			         to (alpha (#f0f0f0, 0.97)));
 }
 
-GraniteWidgetsPopOver .sidebar.view {
-    background-color: #f8f8f8
+GraniteWidgetsPopOver .sidebar.view,
+GraniteWidgetsPopOver * {
+    background-color: @transparent;
 }
 
 GraniteWidgetsPopOver .button {
