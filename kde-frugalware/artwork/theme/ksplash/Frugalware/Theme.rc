@@ -1,8 +1,8 @@
 [KSplash Theme: Frugalware]
 Name = Frugalware
 Description = KDE Splash Screen For Frugalware with Faenza icons
-Version = 1.1
+Version = 1.7.0
 Author = Frugalware Devel Team
-Copyright = GPL 2011 | http://frugalware.org
+Copyright = GPL 2012 | http://frugalware.org
 Homepage = frugalware.org
 Engine = KSplashX
