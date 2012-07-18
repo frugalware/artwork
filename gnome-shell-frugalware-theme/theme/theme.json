@@ -2,9 +2,9 @@
    "shell-theme": {
    "name": "Frugalware", 
    "author": "", 
-   "version": "1.6",
+   "version": "1.7",
    "type":   "custom",
-   "thumbnail": "", 
+   "thumbnail": "preview", 
    "url": "http://frugalware.org/" 
     }
 }

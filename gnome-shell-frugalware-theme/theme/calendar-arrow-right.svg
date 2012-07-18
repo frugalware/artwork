@@ -7,44 +7,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
    width="16"
    height="16"
-   id="svg2"
-   version="1.1"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="calendar-arrow-right.svg">
+   id="svg2">
   <defs
      id="defs4" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="22.627417"
-     inkscape:cx="6.797223"
-     inkscape:cy="6.3457532"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     borderlayer="true"
-     inkscape:showpageshadow="false"
-     inkscape:window-width="930"
-     inkscape:window-height="681"
-     inkscape:window-x="348"
-     inkscape:window-y="63"
-     inkscape:window-maximized="0">
-    <inkscape:grid
-       type="xygrid"
-       id="grid17403"
-       empspacing="5"
-       visible="true"
-       enabled="true"
-       snapvisiblegridlinesonly="true" />
-  </sodipodi:namedview>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -58,25 +26,19 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-1036.3622)">
+     transform="matrix(-0.21389828,0,0,0.15502993,14.961391,0.88494183)"
+     id="g4227">
     <path
-       sodipodi:type="star"
-       style="fill:#333333;fill-opacity:0.87826082999999999;stroke:black;stroke-width:0.86031698999999984;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.17391303999999999;stroke-dasharray:none;display:inline"
-       id="path18028"
-       sodipodi:sides="3"
-       sodipodi:cx="84.5"
-       sodipodi:cy="337.5"
-       sodipodi:r1="5"
-       sodipodi:r2="2.5"
-       sodipodi:arg1="0.52359878"
-       sodipodi:arg2="1.5707963"
-       inkscape:flatsided="true"
-       inkscape:rounded="0"
-       inkscape:randomized="0"
-       d="M 88.830127,340 80.169873,340 84.5,332.5 z"
-       transform="matrix(0,1.3621708,-0.99186247,0,341.54529,929.32667)" />
+       d="m 49.19375,19.033 -28,28 28,28"
+       id="path3165-7-3"
+       style="color:#000000;fill:none;stroke:#414141;stroke-width:14;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible" />
+    <path
+       d="m 49.06877,12.9705 c -1.53896,0.0448 -3.0511,0.70928 -4.125,1.8125 l -32.25,32.25 32.25,32.25 c 2.2253,2.2253 6.2747,2.2253 8.5,0 2.2253,-2.22528 2.2253,-6.2747 0,-8.5 l -23.75,-23.75 23.75,-23.75 c 1.73168,-1.6731 2.295,-4.44228 1.3546,-6.65894 -0.94042,-2.21668 -3.32312,-3.73604 -5.7296,-3.65356 z"
+       id="path3165-7-3-1"
+       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0pt;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;text-anchor:start;color:#000000;fill:none;stroke:#c9fbbb;stroke-width:2;stroke-miterlimit:4;stroke-opacity:0.71891892;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;font-family:Bitstream Vera Sans" />
+    <path
+       d="M 46.646806,15.413278 14.03442,46.782999 46.646806,78.152723"
+       id="path3832"
+       style="color:#000000;fill:none;stroke:#d0d0d0;stroke-width:7.53932667;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.11891892;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible" />
   </g>
 </svg>
