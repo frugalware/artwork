@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-    <name>elementary</name>
-    <author>elementart Design Team</author>
-    <copyright>elementary</copyright>
-    <date>2009-2012</date>
-    <description>A pleasant theme built to adapt to many color schemes as well as be optimal for both high and low resolution displays.</description>
+	<name>Greybird</name>
+	<author>Satyajit Sahoo</author>
+	<copyright>GPL</copyright>
+	<date>July, 2012</date>
+	<description>Greybird metacity theme</description>
 </info>
 
 <!-- ::: GEOMETRY ::: -->
@@ -13,12 +13,12 @@
 	<distance name="left_width" value="1"/>
 	<distance name="right_width" value="1"/>
 	<distance name="bottom_height" value="1"/>
-	<distance name="left_titlebar_edge" value="6"/>
-	<distance name="right_titlebar_edge" value="6"/>
-	<distance name="title_vertical_pad" value="0"/>
+	<distance name="left_titlebar_edge" value="5"/>
+	<distance name="right_titlebar_edge" value="5"/>
+	<distance name="title_vertical_pad" value="3"/>
 	<aspect_ratio name="button" value="1.0"/>
-	<border name="title_border" left="2" right="2" top="7" bottom="0"/>
-	<border name="button_border" left="2" right="2" top="5" bottom="0"/>
+	<border name="title_border" left="2" right="2" top="5" bottom="0"/>
+	<border name="button_border" left="2" right="2" top="3" bottom="0"/>
 </frame_geometry>
 
 <frame_geometry name="shaded" parent="normal" rounded_top_left="true" rounded_top_right="true" rounded_bottom_left="false" rounded_bottom_right="false"/>
@@ -63,14 +63,14 @@
 <!-- ::: CORNERS OUTLINE::: -->
 <draw_ops name="corners_outline">
 	<!-- top left Dark -->
-	<line color="shade/gtk:bg[NORMAL]/0.54" x1="3" y1="1" x2="4" y2="1"/>
-	<line color="shade/gtk:bg[NORMAL]/0.52" x1="2" y1="2" x2="2" y2="2"/>
-	<line color="shade/gtk:bg[NORMAL]/0.50" x1="1" y1="3" x2="1" y2="4"/>
+	<line color="shade/gtk:bg[NORMAL]/0.74" x1="3" y1="1" x2="4" y2="1"/>
+	<line color="shade/gtk:bg[NORMAL]/0.72" x1="2" y1="2" x2="2" y2="2"/>
+	<line color="shade/gtk:bg[NORMAL]/0.70" x1="1" y1="3" x2="1" y2="4"/>
 	
 	<!-- top right Dark -->
-	<line color="shade/gtk:bg[NORMAL]/0.54" x1="width-5" y1="1" x2="width-4" y2="1"/>
-	<line color="shade/gtk:bg[NORMAL]/0.52" x1="width-3" y1="2" x2="width-3" y2="2"/>
-	<line color="shade/gtk:bg[NORMAL]/0.50" x1="width-2" y1="3" x2="width-2" y2="4"/>
+	<line color="shade/gtk:bg[NORMAL]/0.74" x1="width-5" y1="1" x2="width-4" y2="1"/>
+	<line color="shade/gtk:bg[NORMAL]/0.72" x1="width-3" y1="2" x2="width-3" y2="2"/>
+	<line color="shade/gtk:bg[NORMAL]/0.70" x1="width-2" y1="3" x2="width-2" y2="4"/>
 
 	<!-- top left White -->
 	<line color="shade/gtk:bg[NORMAL]/1.12" x1="4" y1="2" x2="4" y2="2"/>
@@ -88,35 +88,30 @@
 
 <!-- ::: BORDER OUTLINE ::: -->
 <draw_ops name="border">
-	<line color="shade/gtk:bg[NORMAL]/0.56" x1="0" y1="0" x2="width" y2="0"/>
-	<line color="shade/gtk:bg[NORMAL]/1.18" x1="4" y1="1" x2="width-1" y2="1"/>
-	<line color="shade/gtk:bg[NORMAL]/0.50" x1="0" y1="0" x2="0" y2="height"/>
-	<line color="shade/gtk:bg[NORMAL]/0.50" x1="width-1" y1="0" x2="width-1" y2="height"/>
-	<line color="shade/gtk:bg[NORMAL]/0.50" x1="0" y1="height-1" x2="width" y2="height-1"/>
+	<line color="shade/gtk:bg[NORMAL]/0.76" x1="0" y1="0" x2="width" y2="0"/>
+	<line color="shade/gtk:bg[NORMAL]/1.08" x1="4" y1="1" x2="width-1" y2="1"/>
+	<line color="shade/gtk:bg[NORMAL]/0.70" x1="0" y1="0" x2="0" y2="height"/>
+	<line color="shade/gtk:bg[NORMAL]/0.70" x1="width-1" y1="0" x2="width-1" y2="height"/>
+	<line color="shade/gtk:bg[NORMAL]/0.70" x1="0" y1="height-1" x2="width" y2="height-1"/>
 </draw_ops>
 
 <draw_ops name="maxed_border">
 	<line color="shade/gtk:bg[NORMAL]/1.14" x1="0" y1="0" x2="width" y2="0"/>
-	<line color="shade/gtk:bg[NORMAL]/0.50" x1="0" y1="height-1" x2="width" y2="height-1"/>
+	<line color="shade/gtk:bg[NORMAL]/0.70" x1="0" y1="height-1" x2="width" y2="height-1"/>
 </draw_ops>
 
 <!-- ::: TITLEBAR ::: -->
-
 <draw_ops name="titlebar_gradient">
 	<gradient type="vertical" x="0" y="0" width="width" height="19">
-		<color value="shade/gtk:bg[NORMAL]/1.04"/>
+		<color value="shade/gtk:bg[NORMAL]/1.07"/>
 		<color value="shade/gtk:bg[NORMAL]/1.0"/>
 	</gradient>
 </draw_ops>
 
 <draw_ops name="titlebar_gradient_unfocused">
 	<gradient type="vertical" x="0" y="0" width="width" height="19">
-		<color value="shade/gtk:bg[NORMAL]/1.10"/>
-		<color value="shade/gtk:bg[NORMAL]/1.06"/>
-	</gradient>
-	<gradient type="vertical" x="0" y="19" width="width" height="height">
-		<color value="shade/gtk:bg[NORMAL]/1.06"/>
-		<color value="shade/gtk:bg[NORMAL]/1.06"/>
+		<color value="shade/gtk:bg[NORMAL]/1.07"/>
+		<color value="shade/gtk:bg[NORMAL]/1.0"/>
 	</gradient>
 </draw_ops>
 
@@ -155,23 +150,27 @@
 
 <!-- ::: TITLES ::: -->
 <draw_ops name="title">
-	<title color="shade/gtk:bg[NORMAL]/1.30" x="((width - title_width) / 2) `max` 0" y="1 `max` ((height-title_height)/2)+1"/>
-	<title color="shade/gtk:bg[NORMAL]/0.50" x="((width - title_width) / 2) `max` 0" y="0 `max` ((height-title_height)/2)"/>
+	<title x="(0 `max` ((width - title_width) / 2)) + 2"
+               y="(1 `max` ((height - title_height) / 2)) + 1"
+               color="shade/gtk:bg[NORMAL]/1.4" />
+	<title x="(0 `max` ((width - title_width) / 2)) + 2"
+               y="(0 `max` ((height - title_height) / 2))"
+               color="shade/gtk:fg[NORMAL]/1.2" />
 </draw_ops>
 
 <draw_ops name="title_unfocused">
-	<title color="shade/gtk:bg[NORMAL]/1.15" x="((width - title_width) / 2) `max` 0" y="1 `max` ((height-title_height)/2)+1"/>
-	<title color="shade/gtk:bg[NORMAL]/0.70" x="((width - title_width) / 2) `max` 0" y="0 `max` ((height-title_height)/2)"/>
+	<title x="(0 `max` ((width - title_width) / 2)) + 2"
+               y="(1 `max` ((height - title_height) / 2)) + 1"
+               color="shade/gtk:bg[NORMAL]/1.2" />
+	<title x="(0 `max` ((width - title_width) / 2)) + 2"
+               y="(0 `max` ((height - title_height) / 2))"
+               color="shade/gtk:fg[NORMAL]/2.0" />
 </draw_ops>
 
-<!-- menu icon -->
-
-<draw_ops name="menu_button"></draw_ops>
-
+<!-- ::: BUTTON ICONS ::: -->
 <!-- close icon -->
-
 <draw_ops name="close_button_normal">
-	<image filename="close-normal.svg"
+	<image filename="close_focused_normal.png"
 		x="(width - object_width) / 2"
 		y="(height - object_height) / 2"
 		width="object_width"
@@ -179,7 +178,7 @@
 </draw_ops>
 
 <draw_ops name="close_button_prelight">
-	<image filename="close-hover.svg"
+	<image filename="close_focused_prelight.png"
 		x="(width - object_width) / 2"
 		y="(height - object_height) / 2"
 		width="object_width"
@@ -187,7 +186,7 @@
 </draw_ops>
 
 <draw_ops name="close_button_pressed">
-	<image filename="close-pressed.svg"
+	<image filename="close_focused_pressed.png"
 		x="(width - object_width) / 2"
 		y="(height - object_height) / 2"
 		width="object_width"
@@ -195,7 +194,7 @@
 </draw_ops>
 
 <draw_ops name="close_button_unfocused">
-        <image filename="close-backdrop.svg"
+        <image filename="close_unfocused.png"
 		x="(width - object_width) / 2"
 		y="(height - object_height) / 2"
 		width="object_width"
@@ -203,9 +202,8 @@
 </draw_ops>
 
 <!-- maximize icon -->
-
 <draw_ops name="maximize_button_normal">
-	<image filename="maximize-normal.svg"
+	<image filename="maximize_focused_normal.png"
 		x="(width - object_width) / 2"
 		y="(height - object_height) / 2"
 		width="object_width"
@@ -213,7 +211,7 @@
 </draw_ops>
 
 <draw_ops name="maximize_button_prelight">
-	<image filename="maximize-hover.svg"
+	<image filename="maximize_focused_prelight.png"
 		x="(width - object_width) / 2"
 		y="(height - object_height) / 2"
 		width="object_width"
@@ -221,7 +219,7 @@
 </draw_ops>
 
 <draw_ops name="maximize_button_pressed">
-	<image filename="maximize-pressed.svg"
+	<image filename="maximize_focused_pressed.png"
 		x="(width - object_width) / 2"
 		y="(height - object_height) / 2"
 		width="object_width"
@@ -229,7 +227,7 @@
 </draw_ops>
 
 <draw_ops name="maximize_button_unfocused">
-        <image filename="maximize-backdrop.svg"
+        <image filename="maximize_unfocused.png"
 		x="(width - object_width) / 2"
 		y="(height - object_height) / 2"
 		width="object_width"
@@ -237,9 +235,8 @@
 </draw_ops>
 
 <!-- unmaximize icon -->
-
 <draw_ops name="unmaximize_button_normal">
-	<image filename="unmaximize-normal.svg"
+	<image filename="unmaximize_focused_normal.png"
 		x="(width - object_width) / 2"
 		y="(height - object_height) / 2"
 		width="object_width"
@@ -247,7 +244,7 @@
 </draw_ops>
 
 <draw_ops name="unmaximize_button_prelight">
-	<image filename="unmaximize-hover.svg"
+	<image filename="unmaximize_focused_prelight.png"
 		x="(width - object_width) / 2"
 		y="(height - object_height) / 2"
 		width="object_width"
@@ -255,7 +252,7 @@
 </draw_ops>
 
 <draw_ops name="unmaximize_button_pressed">
-	<image filename="unmaximize-pressed.svg"
+	<image filename="unmaximize_focused_pressed.png"
 		x="(width - object_width) / 2"
 		y="(height - object_height) / 2"
 		width="object_width"
@@ -263,61 +260,50 @@
 </draw_ops>
 
 <draw_ops name="unmaximize_button_unfocused">
-    	<image filename="unmaximize-backdrop.svg"
+    	<image filename="unmaximize_unfocused.png"
 		x="(width - object_width) / 2"
 		y="(height - object_height) / 2"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
 
-
 <!-- minimize icon -->
-
 <draw_ops name="minimize_button_normal">
-	<gradient type="vertical" x="(width - 8) / 2" y="(height - 2) / 2 + 1" width="8" height="2">
-		<color value="shade/gtk:bg[NORMAL]/0.70" />
-		<color value="shade/gtk:bg[NORMAL]/0.80" />
-	</gradient>
-	<line 
-		color="shade/gtk:bg[NORMAL]/1.20" 
-		x1="(width - 8) / 2" x2="(width - 8) / 2 + 7"  
-		y1="(height - 2) / 2 + 3" y2="(height - 2) / 2 + 3"/>
+	<image filename="minimize_focused_normal.png"
+		x="(width - object_width) / 2"
+		y="(height - object_height) / 2"
+		width="object_width"
+		height="object_height"/>
 </draw_ops>
 
 <draw_ops name="minimize_button_prelight">
-
-	<gradient type="vertical" x="(width - 8) / 2" y="(height - 2) / 2 + 1" width="8" height="2">
-		<color value="shade/gtk:bg[NORMAL]/0.60" />
-		<color value="shade/gtk:bg[NORMAL]/0.70" />
-	</gradient>
-	<line 
-		color="shade/gtk:bg[NORMAL]/1.20" 
-		x1="(width - 8) / 2" x2="(width - 8) / 2 + 7"  
-		y1="(height - 2) / 2 + 3" y2="(height - 2) / 2 + 3"/>
+	<image filename="minimize_focused_prelight.png"
+		x="(width - object_width) / 2"
+		y="(height - object_height) / 2"
+		width="object_width"
+		height="object_height"/>
 </draw_ops>
 
 <draw_ops name="minimize_button_pressed">
-	<gradient type="vertical" x="(width - 8) / 2" y="(height - 2) / 2 + 1" width="8" height="2">
-		<color value="shade/gtk:bg[NORMAL]/0.90" />
-		<color value="shade/gtk:bg[NORMAL]/1.00" />
-	</gradient>
-	<line 
-		color="shade/gtk:bg[NORMAL]/1.20" 
-		x1="(width - 8) / 2" x2="(width - 8) / 2 + 7"  
-		y1="(height - 2) / 2 + 3" y2="(height - 2) / 2 + 3"/>
+	<image filename="minimize_focused_pressed.png"
+		x="(width - object_width) / 2"
+		y="(height - object_height) / 2"
+		width="object_width"
+		height="object_height"/>
 </draw_ops>
 
 <draw_ops name="minimize_button_unfocused">
-	<gradient type="vertical" x="(width - 8) / 2" y="(height - 2) / 2 + 1" width="8" height="2">
-		<color value="shade/gtk:bg[NORMAL]/0.85" />
-		<color value="shade/gtk:bg[NORMAL]/0.90" />
-	</gradient>
-	<line 
-		color="shade/gtk:bg[NORMAL]/1.10" 
-		x1="(width - 8) / 2" x2="(width - 8) / 2 + 7"  
-		y1="(height - 2) / 2 + 3" y2="(height - 2) / 2 + 3"/>
+	<image filename="minimize_unfocused.png"
+		x="(width - object_width) / 2"
+		y="(height - object_height) / 2"
+		width="object_width"
+		height="object_height"/>
 </draw_ops>
 
+<!-- menu icon -->
+<draw_ops name="menu_button"></draw_ops>
+
+<!-- :: BLANK :: -->
 <draw_ops name="blank"></draw_ops>
 
 <!-- ::: FRAME STYLES ::: -->
@@ -404,7 +390,7 @@
 <frame_style_set name="utility" parent="normal">
 	<frame focus="yes" state="normal" resize="both" style="utility_focused"/>
 	<frame focus="no" state="normal" resize="both" style="utility_normal"/>
-	<!-- this is a bunch of crack since utility windows shouldn't be maximized -->
+	<!-- this is a bunch of crap since utility windows shouldn't be maximized -->
 	<frame focus="yes" state="maximized" style="focused"/>
 	<frame focus="no" state="maximized" style="normal"/>
 	<frame focus="yes" state="shaded" style="utility_focused_shaded"/>
@@ -424,6 +410,12 @@
 	<frame focus="no" state="maximized_and_shaded" style="border"/>
 </frame_style_set>
 
+<menu_icon function="close" state="normal" draw_ops="close_button_icon_unfocused"/>
+<menu_icon function="maximize" state="normal" draw_ops="maximize_button_icon_unfocused"/>
+<menu_icon function="unmaximize" state="normal" draw_ops="maximize_button_icon_unfocused"/>
+<menu_icon function="minimize" state="normal" draw_ops="minimize_button_icon_unfocused"/>
+
+<!-- ::: WINDOWS ::: -->
 <window type="normal" style_set="normal"/>
 <window type="dialog" style_set="normal"/>
 <window type="modal_dialog" style_set="normal"/>
@@ -431,12 +423,4 @@
 <window type="utility" style_set="utility"/>
 <window type="border" style_set="border"/>
 
-<menu_icon function="close" state="normal" draw_ops="close_button_icon_unfocused"/>
-<menu_icon function="maximize" state="normal" draw_ops="maximize_button_icon_unfocused"/>
-<menu_icon function="unmaximize" state="normal" draw_ops="maximize_button_icon_unfocused"/>
-<menu_icon function="minimize" state="normal" draw_ops="minimize_button_icon_unfocused"/>
-
 </metacity_theme>
-
-
-
