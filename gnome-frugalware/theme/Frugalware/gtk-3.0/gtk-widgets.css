@@ -1,5 +1,5 @@
 /* NOTES to contributors:
- * use 4 spaces intends, and keep code ALIGNED and ORDERED */
+ * use 4 spaces indents, and keep code ALIGNED and ORDERED */
 
 /* default */
 * {
@@ -149,6 +149,9 @@ GtkSwitch.slider:insensitive {
 }
 
 /* draw borders using box shadow */
+.primary-toolbar .button .menu,
+.toolbar .menu,
+.toolbar .primary-toolbar .menu,
 .menu {
     box-shadow: inset 1px 0 shade(@theme_bg_color, 0.8),
                 inset 0 1px shade(@theme_bg_color, 0.8),
@@ -557,16 +560,6 @@ GtkComboBox.combobox-entry .button:insensitive {
     border-width: 1px 1px 1px 1px;
 }
 
-GtkComboBox.combobox-entry .button,
-GtkComboBox.combobox-entry .button:hover,
-GtkComboBox.combobox-entry .button:active,
-GtkComboBox.combobox-entry .button:insensitive {
-    border-top-color: shade(@theme_bg_color, 0.6);
-    border-right-color: shade(@theme_bg_color, 0.7);
-    border-bottom-color: shade(@theme_bg_color, 0.72);
-    border-left-color: shade(@theme_bg_color, 0.7);
-}
-
 /*********
  * entry *
  *********/
@@ -841,18 +834,19 @@ GtkLabel:insensitive {
  ********/
 GtkTreeMenu.menu,
 GtkMenuToolButton.menu,
+GtkComboBox .menu {
+    background-color: shade(@theme_bg_color, 1.18);
+}
+
 .primary-toolbar .button .menu,
 .toolbar .menu,
 .toolbar .primary-toolbar .menu,
 .menu {
     background-color: shade(@theme_bg_color, 1.18);
-    border-width: 0;
+    border-style: none;
+    border-radius: 0;
     padding: 0;
     color: @theme_fg_color;
-}
-
-.menu:selected {
-    background-color: @theme_selected_bg_color;
 }
 
 .menu.button:hover,
@@ -860,7 +854,7 @@ GtkMenuToolButton.menu,
 .menu.button:active:insensitive,
 .menu.button:insensitive,
 .menu.button {
-    background-color: shade(@theme_bg_color, 1.2);
+    background-color: shade(@theme_bg_color, 1.18);
     background-image: none;
     border-style: none;
 }
@@ -871,10 +865,7 @@ GtkMenuToolButton.menu,
 .menubar {
     -GtkWidget-window-dragging: true;
 
-    background-color: @theme_bg_color;
-    background-image: none;
-    border-width: 0;
-    color: @theme_fg_color;
+    border-style: none;
 }
 
 /***************
@@ -882,6 +873,7 @@ GtkMenuToolButton.menu,
  ***************/
 .menubar.menuitem,
 .menubar .menuitem {
+    border-style: none;
     padding: 3px 5px 3px 5px;
 }
 
@@ -891,41 +883,52 @@ GtkMenuToolButton.menu,
                                      from (shade(@theme_selected_bg_color, 1.2)),
                                      to (shade(@theme_selected_bg_color, 1.0)));
 
-    color: @theme_selected_fg_color;
     border-color: shade(@theme_selected_bg_color, 1.1);
+}
+
+.menubar .menuitem *:hover {
+    color: @theme_selected_fg_color;
 }
 
 /************
  * menuitem *
  ************/
-.menuitem {
+GtkTreeMenu .menuitem {
+    padding: 0;
+
+    border-style: none;
+}
+
+GtkTreeMenu .menuitem * {
+    color: @theme_fg_color;
+}
+
+.menu .menuitem {
     border-radius: 0;
     border-style: solid;
     border-width: 1px;
     padding: 3px 2px 3px 2px;
 }
 
-/* Workaround for lp:949368 */
-GtkComboBox .menuitem * {
-    color: @theme_fg_color;
-}
-
-GtkComboBox .menuitem *:hover {
-    color: @theme_selected_fg_color;
-}
-
-.menuitem:hover,
+.menu .menuitem:active,
 .menu .menuitem:hover {
     background-image: -gtk-gradient(linear, left top, left bottom,
                                      from (shade(@theme_selected_bg_color, 1.2)),
                                      to (shade(@theme_selected_bg_color, 1.0)));
 
-    color: @theme_selected_fg_color;
+    border-radius: 0;
     border-color: shade(@theme_selected_bg_color, 0.8);
 }
 
-.menuitem:insensitive,
-.menuitem *:insensitive {
+.menu .menuitem:active,
+.menu .menuitem *:active,
+.menu .menuitem:hover,
+.menu .menuitem *:hover {
+    color: @theme_selected_fg_color;
+}
+
+.menu .menuitem:insensitive,
+.menu .menuitem *:insensitive {
     color: mix(@theme_fg_color, @theme_bg_color, 0.4);
 }
 
@@ -1046,7 +1049,7 @@ GtkComboBox .menuitem *:hover {
  ******************/
 .pane-separator {
     color: transparent;
-    background-color: shade(@theme_bg_color, 0.8);
+    background-color: @theme_bg_color;
 }
 
 /*************************
