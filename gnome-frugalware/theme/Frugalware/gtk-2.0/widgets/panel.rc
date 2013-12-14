@@ -3,8 +3,6 @@ style "theme-panel"
 	xthickness = 4 # The spacing (padding) inside and between applets. Add a lower value for a more compact look.
 	ythickness = 0
 
-	#bg_pixmap[NORMAL] = "/Panel/panel-bg.png" # Disable for normal panel backgrounds.
-
 	base[NORMAL]		= @bg_color
 	base[PRELIGHT]		= shade (1.06, @bg_color)
 	base[INSENSITIVE]	= @bg_color
@@ -30,8 +28,6 @@ style "theme-panel"
 
 style "theme-panel-buttons"
 {
-	#bg_pixmap[NORMAL] = "/Panel/panel-bg.png" # Disable for normal panel backgrounds.
-
 	engine "pixmap" {
 		image {
 			function	= BOX

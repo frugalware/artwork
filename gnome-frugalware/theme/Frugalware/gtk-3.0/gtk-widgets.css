@@ -1,5 +1,5 @@
 * {
-	engine: adwaita;
+	engine: none;
 	padding: 0;
 
 	background-clip: padding-box;
@@ -1493,8 +1493,6 @@ GtkLinkButton.button:active {
  * tabs		*
  *****************/
 .notebook {
-	/* To get rid of the horrible adwaita tabs we need the notebook to use no engine */
-	engine: none;
 	padding: 0;
 
 	border-color: @borders;
@@ -3534,7 +3532,6 @@ GtkBubbleWindow .toolbar {
 }
 
 .titlebar .titlebutton:backdrop {
-	background-image: none;
 	color: @wm_unfocused_title;
 	icon-shadow: none;
 }
